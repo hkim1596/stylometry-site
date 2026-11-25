@@ -1,15 +1,25 @@
 {
   "title": {
-    "ko": "비극인가 역사극인가? 딥러닝 텍스트 분류를 통한 르네상스 희곡 분석",
-    "en": "Is it tragedy or history? Analysing Renaissance drama through deep-learning text classification"
+    "en": "Tragedy or History? Reading Genre with Models",
+    "ko": "비극인가 역사극인가? 모델과 함께 장르 읽기"
   },
-  "authors": [
-    "김희진",
-    "강수진"
-  ],
-  "printedPages": "421–470",
+  "nativeRoute": "/play/genre-case-study/",
   "slideCount": 68,
   "groups": {
+    "2": {
+      "ko": "2. 단어에서 모델로",
+      "en": "2. From words to models"
+    },
+    "2.2": {
+      "ko": "2.2. 문맥을 읽는 모델",
+      "en": "2.2. Contextual models"
+    },
+    "ex": {
+      "ko": "후속 탐구",
+      "en": "Further investigations"
+    }
+  },
+  "sourceGroups": {
     "2": {
       "ko": "2. 텍스트 분류의 기초",
       "en": "2. Foundations of text classification"
@@ -27,27 +37,31 @@
     {
       "id": "1",
       "title": {
-        "ko": "1. 서론",
-        "en": "1. Introduction"
+        "ko": "1. 장르가 문제가 되는 순간",
+        "en": "1. A disputed genre"
       },
       "pages": "421–426",
       "parent": null,
+      "sourceHeading": {
+        "ko": "1. 서론",
+        "en": "1. Introduction"
+      },
       "slides": [
         {
           "number": 1,
-          "id": "slide-1",
           "title": {
-            "ko": "왜 『리어왕』의 장르를 다시 묻는가?",
-            "en": "Why ask about King Lear’s genre again?"
+            "ko": "같은 작품을 왜 다르게 읽을까?",
+            "en": "Why do we read the same work differently?"
           },
           "pages": "421",
           "figures": [],
-          "passages": [],
+          "visuals": [
+            "case-route"
+          ],
           "lab": null
         },
         {
           "number": 2,
-          "id": "slide-2",
           "title": {
             "ko": "1608년의 표제와 1623년의 목차",
             "en": "A 1608 title and a 1623 catalogue"
@@ -57,43 +71,40 @@
             1,
             2
           ],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 3,
-          "id": "slide-3",
           "title": {
             "ko": "본질로 정의하기: 아리스토텔레스",
             "en": "Defining genre through essential features"
           },
           "pages": "423",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 4,
-          "id": "slide-4",
           "title": {
             "ko": "관계로 읽기: 역사극 목록의 자리",
             "en": "Reading genre relationally: a place in the histories"
           },
           "pages": "423–424",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 5,
-          "id": "slide-5",
           "title": {
             "ko": "빈도에서 문맥과 관계망으로",
             "en": "From frequencies to contexts and relations"
           },
           "pages": "424–426",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         }
       ]
@@ -101,100 +112,93 @@
     {
       "id": "2.1",
       "title": {
-        "ko": "2.1. 머신러닝 기반 텍스트 분류",
-        "en": "2.1. Machine-learning text classification"
+        "ko": "2.1. 단어 빈도와 분류",
+        "en": "2.1. Counts and classification"
       },
       "pages": "426–431",
       "parent": "2",
+      "sourceHeading": {
+        "ko": "2.1. 머신러닝 기반 텍스트 분류",
+        "en": "2.1. Machine-learning text classification"
+      },
       "slides": [
         {
           "number": 6,
-          "id": "slide-6",
           "title": {
             "ko": "특징과 레이블: 질문을 학습 문제로 바꾸기",
             "en": "Features and labels: translating a question into a task"
           },
           "pages": "426–427",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 7,
-          "id": "slide-7",
           "title": {
             "ko": "원문 ①: 글로스터의 공표",
             "en": "Passage 1: Gloucester’s proclamation"
           },
           "pages": "427",
           "figures": [],
-          "passages": [
-            "gloucester"
-          ],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 8,
-          "id": "slide-8",
           "title": {
             "ko": "원문 ②: 폭풍 속의 신체와 광기",
             "en": "Passage 2: bodily exposure and madness in the storm"
           },
           "pages": "428",
           "figures": [],
-          "passages": [
-            "storm"
-          ],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 9,
-          "id": "slide-9",
           "title": {
             "ko": "단어 주머니: 순서를 접고 횟수 세기",
             "en": "Bag of words: counting while discarding order"
           },
           "pages": "428–429",
           "figures": [],
-          "passages": [
-            "gloucester"
-          ],
+          "visuals": [],
           "lab": "/play/bag-of-words/"
         },
         {
           "number": 10,
-          "id": "slide-10",
           "title": {
             "ko": "TF-IDF: 많이 나오면서 드문 단어",
             "en": "TF-IDF: frequent here, uncommon elsewhere"
           },
           "pages": "429–430",
           "figures": [],
-          "passages": [],
+          "visuals": [
+            "tfidf"
+          ],
           "lab": "/play/bag-of-words/"
         },
         {
           "number": 11,
-          "id": "slide-11",
           "title": {
             "ko": "같은 벡터, 다른 분류 규칙",
             "en": "The same vectors, different classification rules"
           },
           "pages": "430",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 12,
-          "id": "slide-12",
           "title": {
             "ko": "통계적 읽기의 장점과 한계",
             "en": "The gains and limits of statistical reading"
           },
           "pages": "430–431",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         }
       ]
@@ -202,42 +206,40 @@
     {
       "id": "2.2.1",
       "title": {
-        "ko": "(1) 임베딩(embedding)",
-        "en": "(1) Embedding"
+        "ko": "(1) 텍스트를 벡터로 표현하기",
+        "en": "(1) Representing text"
       },
       "pages": "431–434",
       "parent": "2.2",
+      "sourceHeading": {
+        "ko": "(1) 임베딩(embedding)",
+        "en": "(1) Embedding"
+      },
       "slides": [
         {
           "number": 13,
-          "id": "slide-13",
           "title": {
             "ko": "임베딩: 횟수에서 관계의 좌표로",
             "en": "Embedding: from counts to relational coordinates"
           },
           "pages": "431–432",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/embeddings/"
         },
         {
           "number": 14,
-          "id": "slide-14",
           "title": {
             "ko": "같은 죽음, 다른 관계",
             "en": "The same field of death, different relations"
           },
           "pages": "432",
           "figures": [],
-          "passages": [
-            "gloucester",
-            "storm"
-          ],
+          "visuals": [],
           "lab": "/play/context/"
         },
         {
           "number": 15,
-          "id": "slide-15",
           "title": {
             "ko": "설명용 2차원 지도 읽기",
             "en": "Reading the illustrative two-dimensional map"
@@ -246,19 +248,20 @@
           "figures": [
             3
           ],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 16,
-          "id": "slide-16",
           "title": {
             "ko": "단어에서 장면과 작품의 벡터로",
             "en": "From word vectors to scenes and works"
           },
           "pages": "434",
           "figures": [],
-          "passages": [],
+          "visuals": [
+            "representation-pipeline"
+          ],
           "lab": "/play/embeddings/"
         }
       ]
@@ -266,63 +269,62 @@
     {
       "id": "2.2.2",
       "title": {
-        "ko": "(2) 사전학습(pre-training)",
-        "en": "(2) Pre-training"
+        "ko": "(2) 언어의 패턴 학습하기",
+        "en": "(2) Learning from language"
       },
       "pages": "434–439",
       "parent": "2.2",
+      "sourceHeading": {
+        "ko": "(2) 사전학습(pre-training)",
+        "en": "(2) Pre-training"
+      },
       "slides": [
         {
           "number": 17,
-          "id": "slide-17",
           "title": {
             "ko": "임베딩은 형식, 사전학습은 학습 과정",
             "en": "Embedding is a form; pretraining is a learning process"
           },
           "pages": "434–435",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 18,
-          "id": "slide-18",
           "title": {
             "ko": "자기지도학습: 답을 텍스트에서 만들기",
             "en": "Self-supervision: deriving targets from the text"
           },
           "pages": "435–436",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/finish-the-line/"
         },
         {
           "number": 19,
-          "id": "slide-19",
           "title": {
             "ko": "교재의 여섯 가지 빈칸 과제",
-            "en": "The chapter’s six masked-language prompts"
+            "en": "The book’s six masked-language prompts"
           },
           "pages": "436",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/finish-the-line/"
         },
         {
           "number": 20,
-          "id": "slide-20",
           "title": {
             "ko": "예측 → 손실 → 역전파 → 갱신",
             "en": "Prediction → loss → backpropagation → update"
           },
           "pages": "436–437",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 21,
-          "id": "slide-21",
           "title": {
             "ko": "의미축 프로필: 이름은 사후 해석이다",
             "en": "Semantic-axis profiles: names are interpretations"
@@ -331,7 +333,7 @@
           "figures": [
             4
           ],
-          "passages": [],
+          "visuals": [],
           "lab": null
         }
       ]
@@ -339,27 +341,29 @@
     {
       "id": "2.2.3",
       "title": {
-        "ko": "(3) 미세 조정(fine tuning)",
-        "en": "(3) Fine tuning"
+        "ko": "(3) 장르 레이블 학습하기",
+        "en": "(3) Learning genre labels"
       },
       "pages": "439–443",
       "parent": "2.2",
+      "sourceHeading": {
+        "ko": "(3) 미세 조정(fine tuning)",
+        "en": "(3) Fine tuning"
+      },
       "slides": [
         {
           "number": 22,
-          "id": "slide-22",
           "title": {
             "ko": "레이블로 경계 만들기",
             "en": "Learning a boundary from labels"
           },
           "pages": "439–440",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/train-classifier/"
         },
         {
           "number": 23,
-          "id": "slide-23",
           "title": {
             "ko": "미세 조정 전후의 관계 비교",
             "en": "Comparing relations before and after fine tuning"
@@ -368,24 +372,22 @@
           "figures": [
             5
           ],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/embeddings/"
         },
         {
           "number": 24,
-          "id": "slide-24",
           "title": {
             "ko": "미세 조정의 네 단계",
             "en": "Four operations in fine tuning"
           },
           "pages": "441",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/train-classifier/"
         },
         {
           "number": 25,
-          "id": "slide-25",
           "title": {
             "ko": "작품 지도와 『리어왕』의 경계",
             "en": "A map of plays and Lear at the boundary"
@@ -394,7 +396,7 @@
           "figures": [
             6
           ],
-          "passages": [],
+          "visuals": [],
           "lab": null
         }
       ]
@@ -402,27 +404,29 @@
     {
       "id": "2.2.4",
       "title": {
-        "ko": "(4) 어텐션 스코어(attention score)",
-        "en": "(4) Attention score"
+        "ko": "(4) 어텐션 살펴보기",
+        "en": "(4) Inspecting attention"
       },
       "pages": "443–450",
       "parent": "2.2",
+      "sourceHeading": {
+        "ko": "(4) 어텐션 스코어(attention score)",
+        "en": "(4) Attention score"
+      },
       "slides": [
         {
           "number": 26,
-          "id": "slide-26",
           "title": {
             "ko": "어텐션은 어떤 계산을 기록하는가?",
             "en": "What does attention record?"
           },
           "pages": "443–444",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/attention/"
         },
         {
           "number": 27,
-          "id": "slide-27",
           "title": {
             "ko": "proclaim이 참조하는 문맥",
             "en": "The context attended to by proclaim"
@@ -431,14 +435,11 @@
           "figures": [
             7
           ],
-          "passages": [
-            "gloucester"
-          ],
+          "visuals": [],
           "lab": "/play/attention/"
         },
         {
           "number": 28,
-          "id": "slide-28",
           "title": {
             "ko": "death와 grave의 연결망",
             "en": "The relational patterns of death and grave"
@@ -447,12 +448,11 @@
           "figures": [
             8
           ],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/attention/"
         },
         {
           "number": 29,
-          "id": "slide-29",
           "title": {
             "ko": "멀티헤드: 네 렌즈의 비유",
             "en": "Multi-head attention: the four-lens analogy"
@@ -461,31 +461,29 @@
           "figures": [
             9
           ],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/attention/"
         },
         {
           "number": 30,
-          "id": "slide-30",
           "title": {
             "ko": "여러 표현을 합칠 때 생기는 해석",
             "en": "Interpreting combined representations"
           },
           "pages": "447–448",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/attention/"
         },
         {
           "number": 31,
-          "id": "slide-31",
           "title": {
             "ko": "해석 가능성에서 멀리서 읽기로",
             "en": "From interpretability to distant reading"
           },
           "pages": "448–450",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/lime-lab/"
         }
       ]
@@ -493,27 +491,29 @@
     {
       "id": "3",
       "title": {
-        "ko": "3. 르네상스 희곡 분류 실습",
-        "en": "3. A practical classification of Renaissance drama"
+        "ko": "3. 장르 분류 실험 설계",
+        "en": "3. A genre-classification experiment"
       },
       "pages": "450–451",
       "parent": null,
+      "sourceHeading": {
+        "ko": "3. 르네상스 희곡 분류 실습",
+        "en": "3. A practical classification of Renaissance drama"
+      },
       "slides": [
         {
           "number": 32,
-          "id": "slide-32",
           "title": {
             "ko": "실습의 질문과 범위를 정하기",
             "en": "Define the practical question and its scope"
           },
           "pages": "450",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/train-classifier/"
         },
         {
           "number": 33,
-          "id": "slide-33",
           "title": {
             "ko": "일곱 단계의 연구 흐름",
             "en": "The seven-stage research workflow"
@@ -522,7 +522,7 @@
           "figures": [
             10
           ],
-          "passages": [],
+          "visuals": [],
           "lab": null
         }
       ]
@@ -530,46 +530,47 @@
     {
       "id": "3.1",
       "title": {
-        "ko": "3.1. 원문 수집과 코퍼스 구축: 텍스트를 TEI-XML 형식으로 확보하기",
-        "en": "3.1. Source collection and corpus building: obtaining texts in TEI-XML"
+        "ko": "3.1. 원문과 판본",
+        "en": "3.1. Source texts and editions"
       },
       "pages": "451–452",
       "parent": "3",
+      "sourceHeading": {
+        "ko": "3.1. 원문 수집과 코퍼스 구축: 텍스트를 TEI-XML 형식으로 확보하기",
+        "en": "3.1. Source collection and corpus building: obtaining texts in TEI-XML"
+      },
       "slides": [
         {
           "number": 34,
-          "id": "slide-34",
           "title": {
             "ko": "Folger에서 TEI-XML 확보하기",
             "en": "Obtain TEI-XML from Folger"
           },
           "pages": "451–452",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 35,
-          "id": "slide-35",
           "title": {
             "ko": "TEI 태그를 읽는 이유",
             "en": "Why read the TEI tags?"
           },
           "pages": "452",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 36,
-          "id": "slide-36",
           "title": {
             "ko": "판본·서지 정보와 EEBO-TCP로의 확장",
             "en": "Editions, bibliography and an EEBO-TCP extension"
           },
           "pages": "452",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         }
       ]
@@ -577,46 +578,47 @@
     {
       "id": "3.2",
       "title": {
-        "ko": "3.2. 텍스트 전처리와 토큰화",
-        "en": "3.2. Text preprocessing and tokenization"
+        "ko": "3.2. 대사 텍스트 준비하기",
+        "en": "3.2. Preparing dialogue"
       },
       "pages": "452–453",
       "parent": "3",
+      "sourceHeading": {
+        "ko": "3.2. 텍스트 전처리와 토큰화",
+        "en": "3.2. Text preprocessing and tokenization"
+      },
       "slides": [
         {
           "number": 37,
-          "id": "slide-37",
           "title": {
             "ko": "대사만 추출하기",
             "en": "Extract speech-only text"
           },
           "pages": "452–453",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 38,
-          "id": "slide-38",
           "title": {
             "ko": "고유명사 치환은 별도의 실험이다",
             "en": "Name masking is a separate experiment"
           },
           "pages": "453",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/classifier-lab/"
         },
         {
           "number": 39,
-          "id": "slide-39",
           "title": {
             "ko": "단어와 토큰은 같은 단위가 아니다",
             "en": "Words and tokens are not the same unit"
           },
           "pages": "453–454",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/tokenizer/"
         }
       ]
@@ -624,70 +626,71 @@
     {
       "id": "3.3",
       "title": {
-        "ko": "3.3. 학습 데이터 구성과 레이블 부착",
-        "en": "3.3. Constructing and labelling training data"
+        "ko": "3.3. 레이블·청크·분할",
+        "en": "3.3. Labels, chunks and splits"
       },
       "pages": "454–456",
       "parent": "3",
+      "sourceHeading": {
+        "ko": "3.3. 학습 데이터 구성과 레이블 부착",
+        "en": "3.3. Constructing and labelling training data"
+      },
       "slides": [
         {
           "number": 40,
-          "id": "slide-40",
           "title": {
             "ko": "data_a와 data_b가 연구 질문을 정한다",
             "en": "data_a and data_b define the research question"
           },
           "pages": "454–455",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/train-classifier/"
         },
         {
           "number": 41,
-          "id": "slide-41",
           "title": {
             "ko": "510토큰 청크 코드 읽기",
             "en": "Read the 510-token chunking code"
           },
           "pages": "454–455",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 42,
-          "id": "slide-42",
           "title": {
             "ko": "청크 수와 작품 다양성",
             "en": "Chunk counts and diversity of works"
           },
           "pages": "455",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 43,
-          "id": "slide-43",
           "title": {
             "ko": "언더샘플링으로 클래스 균형 맞추기",
             "en": "Balance the classes by undersampling"
           },
           "pages": "455–456",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 44,
-          "id": "slide-44",
           "title": {
             "ko": "80:20 층화 분할과 작품 단위 분할",
             "en": "The 80:20 stratified split and work-level splitting"
           },
           "pages": "455–456",
           "figures": [],
-          "passages": [],
+          "visuals": [
+            "split-comparison"
+          ],
           "lab": "/play/train-classifier/"
         }
       ]
@@ -695,39 +698,40 @@
     {
       "id": "3.4",
       "title": {
-        "ko": "3.4. 사전학습 모델의 미세 조정 과정",
-        "en": "3.4. Fine-tuning the pretrained model"
+        "ko": "3.4. 학습 과정과 손실",
+        "en": "3.4. Training and loss"
       },
       "pages": "457–459",
       "parent": "3",
+      "sourceHeading": {
+        "ko": "3.4. 사전학습 모델의 미세 조정 과정",
+        "en": "3.4. Fine-tuning the pretrained model"
+      },
       "slides": [
         {
           "number": 45,
-          "id": "slide-45",
           "title": {
             "ko": "학습 설정 코드의 각 항목",
             "en": "Read the training configuration"
           },
           "pages": "457",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/train-classifier/"
         },
         {
           "number": 46,
-          "id": "slide-46",
           "title": {
             "ko": "에포크·배치·워밍업을 이해하기",
             "en": "Understand epochs, batches and warmup"
           },
           "pages": "457",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 47,
-          "id": "slide-47",
           "title": {
             "ko": "학습 손실과 검증 손실의 원본 곡선",
             "en": "The original training and validation loss curves"
@@ -736,19 +740,18 @@
           "figures": [
             11
           ],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 48,
-          "id": "slide-48",
           "title": {
             "ko": "곡선에서 과적합을 질문하기",
             "en": "Use the curves to question overfitting"
           },
           "pages": "459",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         }
       ]
@@ -756,27 +759,29 @@
     {
       "id": "3.5",
       "title": {
-        "ko": "3.5. 모델 성능 평가와 검증 지표",
-        "en": "3.5. Model evaluation and validation metrics"
+        "ko": "3.5. 평가와 증거",
+        "en": "3.5. Evaluation and evidence"
       },
       "pages": "459–460",
       "parent": "3",
+      "sourceHeading": {
+        "ko": "3.5. 모델 성능 평가와 검증 지표",
+        "en": "3.5. Model evaluation and validation metrics"
+      },
       "slides": [
         {
           "number": 49,
-          "id": "slide-49",
           "title": {
             "ko": "정확도: 어떤 자료에서 몇 개를 맞혔는가?",
             "en": "Accuracy: how many correct, on which material?"
           },
           "pages": "459",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 50,
-          "id": "slide-50",
           "title": {
             "ko": "분류 오류 행렬의 네 칸",
             "en": "The four cells of the confusion matrix"
@@ -785,19 +790,22 @@
           "figures": [
             12
           ],
-          "passages": [],
+          "visuals": [
+            "matrix"
+          ],
           "lab": null
         },
         {
           "number": 51,
-          "id": "slide-51",
           "title": {
             "ko": "오류를 다시 읽고 평가 범위를 정하기",
             "en": "Reread errors and delimit the evaluation claim"
           },
           "pages": "460",
           "figures": [],
-          "passages": [],
+          "visuals": [
+            "model-comparison"
+          ],
           "lab": "/play/classifier-lab/"
         }
       ]
@@ -805,41 +813,40 @@
     {
       "id": "3.6",
       "title": {
-        "ko": "3.6. 어텐션 기반 해석 가능성 분석",
-        "en": "3.6. Attention-based interpretability analysis"
+        "ko": "3.6. 대조되는 두 구절 해석하기",
+        "en": "3.6. Explaining contrasting passages"
       },
       "pages": "461–464",
       "parent": "3",
+      "sourceHeading": {
+        "ko": "3.6. 어텐션 기반 해석 가능성 분석",
+        "en": "3.6. Attention-based interpretability analysis"
+      },
       "slides": [
         {
           "number": 52,
-          "id": "slide-52",
           "title": {
             "ko": "원래 절 제목과 설명 방법을 구분하기",
             "en": "Preserve the section title; distinguish explanation methods"
           },
           "pages": "461",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/lime-lab/"
         },
         {
           "number": 53,
-          "id": "slide-53",
           "title": {
             "ko": "그림 13의 원문을 먼저 읽기",
             "en": "Read figure 13’s passage before its weights"
           },
           "pages": "461–462",
           "figures": [],
-          "passages": [
-            "figure13-royal-justice"
-          ],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 54,
-          "id": "slide-54",
           "title": {
             "ko": "그림 13: 왕권·법·판결의 결속",
             "en": "Figure 13: kingship, law and judgment together"
@@ -848,26 +855,22 @@
           "figures": [
             13
           ],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/lime-lab/"
         },
         {
           "number": 55,
-          "id": "slide-55",
           "title": {
             "ko": "그림 14의 원문: 여러 사람을 연기하는 나",
             "en": "Figure 14’s passage: one person, many people"
           },
           "pages": "462–463",
           "figures": [],
-          "passages": [
-            "figure14-prison"
-          ],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 56,
-          "id": "slide-56",
           "title": {
             "ko": "그림 14: 시간과 음악의 불협화음",
             "en": "Figure 14: the discord of time and music"
@@ -876,21 +879,18 @@
           "figures": [
             14
           ],
-          "passages": [
-            "richard"
-          ],
+          "visuals": [],
           "lab": "/play/lime-lab/"
         },
         {
           "number": 57,
-          "id": "slide-57",
           "title": {
             "ko": "두 설명을 비교하고 새 실험으로 잇기",
             "en": "Compare both explanations and connect to a new run"
           },
           "pages": "461–464",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/attention/"
         }
       ]
@@ -898,60 +898,62 @@
     {
       "id": "3.7",
       "title": {
-        "ko": "3.7. 새로운 텍스트에 대한 장르 예측",
-        "en": "3.7. Predicting the genre of new texts"
+        "ko": "3.7. 새로운 작품 읽기",
+        "en": "3.7. Reading unseen plays"
       },
       "pages": "464–466",
       "parent": "3",
+      "sourceHeading": {
+        "ko": "3.7. 새로운 텍스트에 대한 장르 예측",
+        "en": "3.7. Predicting the genre of new texts"
+      },
       "slides": [
         {
           "number": 58,
-          "id": "slide-58",
           "title": {
             "ko": "data_c에서 predictions.csv까지",
             "en": "From data_c to predictions.csv"
           },
           "pages": "464",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/classifier-lab/"
         },
         {
           "number": 59,
-          "id": "slide-59",
           "title": {
             "ko": "『페리클레스』의 전체 제시 구절",
-            "en": "The complete Pericles passage printed in the chapter"
+            "en": "The complete Pericles passage printed in the book"
           },
           "pages": "465",
           "figures": [],
-          "passages": [
-            "pericles"
-          ],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 60,
-          "id": "slide-60",
           "title": {
             "ko": "0.5987과 정치적 자기 옹호",
             "en": "0.5987 and political self-justification"
           },
           "pages": "465–466",
           "figures": [],
-          "passages": [],
+          "visuals": [
+            "threshold"
+          ],
           "lab": null
         },
         {
           "number": 61,
-          "id": "slide-61",
           "title": {
             "ko": "작품을 청크의 분포로 읽기",
             "en": "Read a work through its distribution of chunks"
           },
           "pages": "464–466",
           "figures": [],
-          "passages": [],
+          "visuals": [
+            "votes"
+          ],
           "lab": null
         }
       ]
@@ -959,34 +961,36 @@
     {
       "id": "4",
       "title": {
-        "ko": "4. 결론",
-        "en": "4. Conclusion"
+        "ko": "4. 장르 이름이 드러내는 것",
+        "en": "4. What genre labels reveal"
       },
       "pages": "466–467",
       "parent": null,
+      "sourceHeading": {
+        "ko": "4. 결론",
+        "en": "4. Conclusion"
+      },
       "slides": [
         {
           "number": 62,
-          "id": "slide-62",
           "title": {
             "ko": "장르는 본질인가, 관계인가?",
             "en": "Is genre essence or relation?"
           },
           "pages": "466–467",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 63,
-          "id": "slide-63",
           "title": {
             "ko": "결과·설명·비평을 연결하는 연구 기록",
             "en": "A research record connecting results, explanations and criticism"
           },
           "pages": "467",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/classifier-lab/"
         }
       ]
@@ -994,22 +998,25 @@
     {
       "id": "ex1",
       "title": {
-        "ko": "연습문제 · ➊ 기초",
-        "en": "Exercises · ➊ Basic"
+        "ko": "탐구 ① 설명 비교하기",
+        "en": "Investigation 1 · Compare explanations"
       },
       "pages": "468",
       "parent": "ex",
+      "sourceHeading": {
+        "ko": "연습문제 · ➊ 기초",
+        "en": "Exercises · ➊ Basic"
+      },
       "slides": [
         {
           "number": 64,
-          "id": "slide-64",
           "title": {
             "ko": "기초: 세 설명 파일을 비교하기",
             "en": "Basic exercise: compare three explanation files"
           },
           "pages": "468",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/lime-lab/"
         }
       ]
@@ -1017,34 +1024,36 @@
     {
       "id": "ex2",
       "title": {
-        "ko": "연습문제 · ➋ 중급",
-        "en": "Exercises · ➋ Intermediate"
+        "ko": "탐구 ② 하디로 확장하기",
+        "en": "Investigation 2 · Transfer to Hardy"
       },
       "pages": "468–469",
       "parent": "ex",
+      "sourceHeading": {
+        "ko": "연습문제 · ➋ 중급",
+        "en": "Exercises · ➋ Intermediate"
+      },
       "slides": [
         {
           "number": 65,
-          "id": "slide-65",
           "title": {
             "ko": "중급 ①: 빅토리언과 모더니즘 학습",
             "en": "Intermediate 1: train Victorian versus Modernist"
           },
           "pages": "468",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": "/play/train-classifier/"
         },
         {
           "number": 66,
-          "id": "slide-66",
           "title": {
             "ko": "중급 ②: 하디의 확률 분포와 경계 청크",
             "en": "Intermediate 2: Hardy’s score distribution and boundary chunks"
           },
           "pages": "468–469",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         }
       ]
@@ -1052,34 +1061,36 @@
     {
       "id": "ex3",
       "title": {
-        "ko": "연습문제 · ➌ 심화",
-        "en": "Exercises · ➌ Advanced"
+        "ko": "탐구 ③ 레이블과 연구 질문",
+        "en": "Investigation 3 · Rethink the labels"
       },
       "pages": "469–470",
       "parent": "ex",
+      "sourceHeading": {
+        "ko": "연습문제 · ➌ 심화",
+        "en": "Exercises · ➌ Advanced"
+      },
       "slides": [
         {
           "number": 67,
-          "id": "slide-67",
           "title": {
             "ko": "심화 ①: 레이블을 바꾸어 연구 설계하기",
             "en": "Advanced 1: redesign the labels"
           },
           "pages": "469",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         },
         {
           "number": 68,
-          "id": "slide-68",
           "title": {
             "ko": "심화 ②: 스타일 마커와 비평적 종합",
             "en": "Advanced 2: style markers and critical synthesis"
           },
           "pages": "469–470",
           "figures": [],
-          "passages": [],
+          "visuals": [],
           "lab": null
         }
       ]
@@ -1227,14 +1238,26 @@
       "src": "assets/figure-14.png"
     }
   ],
-  "coverageNotes": [
-    "Every printed section, numbered subsection, and exercise level retained.",
-    "All six masked-language prompts on p.436 included.",
-    "Gloucester, storm, figure13, figure14 and Pericles passages included with edition boundaries.",
-    "All fourteen published figures preserved; vector labels in figures11–12 preserved.",
-    "Complete final advanced exercise on p.470 verified directly from PDF; earlier extraction stopped after first line.",
-    "Printed training manifest is not enumerated; new reconstructed data must be disclosed.",
-    "Published attention headings retained while attention and LIME methods are distinguished.",
-    "Code/docstring discrepancy about preserving scene boundaries is explicitly discussed."
+  "originalVisuals": [
+    {
+      "slide": 1,
+      "type": "Case route",
+      "evidence": "conceptual navigation"
+    },
+    {
+      "slide": 16,
+      "type": "Representation pipeline",
+      "evidence": "conceptual, no invented measurements"
+    },
+    {
+      "slide": 44,
+      "type": "Training/evaluation split diagram",
+      "evidence": "actual saved model split records"
+    },
+    {
+      "slide": 51,
+      "type": "Ten-model grouped comparison",
+      "evidence": "actual saved accuracy and macro-F1 metrics"
+    }
   ]
 }

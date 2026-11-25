@@ -1,0 +1,58 @@
+# Case-study and source-section map
+
+The case route preserves the source hierarchy; both names remain available in the interface.
+
+- **1. A disputed genre** / 1. 장르가 문제가 되는 순간
+  - Source: 1. Introduction / 1. 서론
+  - Pages 421–426; slides 1, 2, 3, 4, 5
+- **2.1. Counts and classification** / 2.1. 단어 빈도와 분류
+  - Source: 2.1. Machine-learning text classification / 2.1. 머신러닝 기반 텍스트 분류
+  - Pages 426–431; slides 6, 7, 8, 9, 10, 11, 12
+- **(1) Representing text** / (1) 텍스트를 벡터로 표현하기
+  - Source: (1) Embedding / (1) 임베딩(embedding)
+  - Pages 431–434; slides 13, 14, 15, 16
+- **(2) Learning from language** / (2) 언어의 패턴 학습하기
+  - Source: (2) Pre-training / (2) 사전학습(pre-training)
+  - Pages 434–439; slides 17, 18, 19, 20, 21
+- **(3) Learning genre labels** / (3) 장르 레이블 학습하기
+  - Source: (3) Fine tuning / (3) 미세 조정(fine tuning)
+  - Pages 439–443; slides 22, 23, 24, 25
+- **(4) Inspecting attention** / (4) 어텐션 살펴보기
+  - Source: (4) Attention score / (4) 어텐션 스코어(attention score)
+  - Pages 443–450; slides 26, 27, 28, 29, 30, 31
+- **3. A genre-classification experiment** / 3. 장르 분류 실험 설계
+  - Source: 3. A practical classification of Renaissance drama / 3. 르네상스 희곡 분류 실습
+  - Pages 450–451; slides 32, 33
+- **3.1. Source texts and editions** / 3.1. 원문과 판본
+  - Source: 3.1. Source collection and corpus building: obtaining texts in TEI-XML / 3.1. 원문 수집과 코퍼스 구축: 텍스트를 TEI-XML 형식으로 확보하기
+  - Pages 451–452; slides 34, 35, 36
+- **3.2. Preparing dialogue** / 3.2. 대사 텍스트 준비하기
+  - Source: 3.2. Text preprocessing and tokenization / 3.2. 텍스트 전처리와 토큰화
+  - Pages 452–453; slides 37, 38, 39
+- **3.3. Labels, chunks and splits** / 3.3. 레이블·청크·분할
+  - Source: 3.3. Constructing and labelling training data / 3.3. 학습 데이터 구성과 레이블 부착
+  - Pages 454–456; slides 40, 41, 42, 43, 44
+- **3.4. Training and loss** / 3.4. 학습 과정과 손실
+  - Source: 3.4. Fine-tuning the pretrained model / 3.4. 사전학습 모델의 미세 조정 과정
+  - Pages 457–459; slides 45, 46, 47, 48
+- **3.5. Evaluation and evidence** / 3.5. 평가와 증거
+  - Source: 3.5. Model evaluation and validation metrics / 3.5. 모델 성능 평가와 검증 지표
+  - Pages 459–460; slides 49, 50, 51
+- **3.6. Explaining contrasting passages** / 3.6. 대조되는 두 구절 해석하기
+  - Source: 3.6. Attention-based interpretability analysis / 3.6. 어텐션 기반 해석 가능성 분석
+  - Pages 461–464; slides 52, 53, 54, 55, 56, 57
+- **3.7. Reading unseen plays** / 3.7. 새로운 작품 읽기
+  - Source: 3.7. Predicting the genre of new texts / 3.7. 새로운 텍스트에 대한 장르 예측
+  - Pages 464–466; slides 58, 59, 60, 61
+- **4. What genre labels reveal** / 4. 장르 이름이 드러내는 것
+  - Source: 4. Conclusion / 4. 결론
+  - Pages 466–467; slides 62, 63
+- **Investigation 1 · Compare explanations** / 탐구 ① 설명 비교하기
+  - Source: Exercises · ➊ Basic / 연습문제 · ➊ 기초
+  - Pages 468; slides 64
+- **Investigation 2 · Transfer to Hardy** / 탐구 ② 하디로 확장하기
+  - Source: Exercises · ➋ Intermediate / 연습문제 · ➋ 중급
+  - Pages 468–469; slides 65, 66
+- **Investigation 3 · Rethink the labels** / 탐구 ③ 레이블과 연구 질문
+  - Source: Exercises · ➌ Advanced / 연습문제 · ➌ 심화
+  - Pages 469–470; slides 67, 68

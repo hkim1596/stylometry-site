@@ -1,8 +1,8 @@
-# Complete bilingual Chapter 11 course: source and method record
+# Tragedy or History? Reading Genre with Models — sources and methods
 
 ## Published source and coverage
 
-김희진·강수진, 「비극인가 역사극인가? 딥러닝 텍스트 분류를 통한 르네상스 희곡 분석」, 『디지털인문학의 길잡이: 입문』, printed pages 421–470. The course contains 68 substantive slides, in complete Korean and English, arranged under the original section and subsection headings. `coverage.json` maps every slide, page reference, literary quotation and figure. The complete final exercise on p.470 was read directly from the PDF; the earlier text extraction had stopped after that page’s first line.
+김희진·강수진, 「비극인가 역사극인가? 딥러닝 텍스트 분류를 통한 르네상스 희곡 분석」, 『디지털인문학의 길잡이: 입문』, printed pages 421–470. The case study contains 68 substantive slides in complete Korean and English. Its descriptive section names preserve the source’s hierarchy while foregrounding the literary problem, model comparisons and interpretive questions. `coverage.json` maps every slide, page reference, literary quotation and figure. The complete final exercise on p.470 was read directly from the PDF; the earlier text extraction had stopped after that page’s first line.
 
 The user explicitly confirmed ownership and authorized the original book images. The published electronic-book PDF has SHA-256 `18387600d94cd124632dadc3dba1ce21849adb6f99b2e8799993a6cb47d9f6bc`. Printed page N appears at PDF ordinal page N+1. `figure-provenance.json` records the original local source files and image extraction details.
 
@@ -37,4 +37,12 @@ The manuscript image folder differs from the published edition, notably for figu
 
 Both languages include slide prose, section navigation, labels, activity prompts, source notes in the interface, widget explanations and figure captions. The published Korean headings remain visible as source headings in the English course. The language is retained in `?lang=ko|en` and `localStorage['chapter11-language']`; the direct slide is in `#slide-N`. Notes are held only in the current tab and can be downloaded. Native modal figure zoom, keyboard arrows, expand/collapse source readers, section navigation and mobile layouts are included.
 
-The static course runs without a GPU. Connected labs open separately; their model provenance, evaluation records and newly executed outputs must remain distinct from printed book results. Embedded mode reports same-origin `playground-lesson-height` messages for station `chapter-11`.
+The static course runs without a GPU. Connected labs open separately; their model provenance, evaluation records and newly executed outputs must remain distinct from printed book results. Embedded mode reports same-origin `playground-lesson-height` messages for station `genre-case-study`.
+
+## New case-study framing and visual evidence
+
+The opening organizes the investigation around contrasting registers in Lear, royal justice in 2 Henry IV, and Richard II’s prison soliloquy. A four-part case map links reading, representation, evaluation and explanation. The concluding deliverable is an argument with a passage, controlled comparison, interpretation and counterexample.
+
+A new representation-pipeline illustration is explicitly conceptual and contains no invented measurements. The split diagram uses actual recorded training/evaluation work and chunk counts. The model comparison chart reads the saved ten-model manifest, groups within-work chunk validation, held-out-work validation and the three-class extension separately, and offers Accuracy and Macro F1 views. The full extracted records and original manifest SHA-256 are in `data/model-comparison.json`. These are validation results from final-epoch checkpoints, monitored during training, not untouched final-test results; changed schedules and data units prevent simple causal comparisons.
+
+The comparison also retains the disagreement between the printed prison-passage prediction and the newly saved baseline’s History prediction. Original printed figures and their numeric reports have not been altered. The case page is available at `/play/genre-case-study/`; the permanent static copy may live at `/teaching/`.
