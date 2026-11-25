@@ -3,3 +3,68 @@
 @media print{.tv-controls,.tv-image-links,.tv input{display:none}.tv-card,.tv-step{break-inside:avoid}.tv .tv-chart{max-height:270px}}
 
 .tv-scroll-hint{display:none}.tv-plot-scroll:focus-visible{outline:3px solid #b37521;outline-offset:3px}@media(max-width:700px){.tv .tv-scroll-hint{display:block;font-size:13px;color:#506872;margin:8px 0}}
+
+/* Preserve measured scales and hue meanings while making them legible on dark paper. */
+@media screen {
+  html[data-theme="dark"] .tv {
+    --tv-ink: #dcebea;
+    --tv-blue: #78bfd4;
+    --tv-rose: #e397ab;
+    --tv-gold: #e1b370;
+    --tv-line: #49656b;
+    --tv-pale: #2a4246;
+  }
+  html[data-theme="dark"] .tv :is(.tv-kicker, .tv-tag, small, .tv-note, .tv-result-label, .tv-scroll-hint) { color: #b6cbcc; }
+  html[data-theme="dark"] .tv :is(.tv-card, .tv-step, .tv-scroll) { background: #20343b; }
+  html[data-theme="dark"] .tv-card:nth-child(3n+2) { background: #263d38; }
+  html[data-theme="dark"] .tv-card:nth-child(3n) { background: #363226; }
+  html[data-theme="dark"] .tv-card p { color: #c2d6d7; }
+  html[data-theme="dark"] .tv-step span { color: #b8ced1; }
+  html[data-theme="dark"] .tv-step:not(:last-child)::after { background: #20343b; }
+  html[data-theme="dark"] .tv-quote mark { background: #665025; color: #fff1ce; }
+  html[data-theme="dark"] .tv :is(button, a.tv-button) { background: #263f48; border-color: #6f969f; color: #d3ebf1; }
+  html[data-theme="dark"] .tv button[aria-pressed="true"] { background: #a5d4db; color: #12343e; border-color: #b9e4e9; }
+  html[data-theme="dark"] .tv :is(button:hover, a.tv-button:hover) { border-color: #a0d4dc; box-shadow: 0 0 0 2px #a0d4dc20; }
+  html[data-theme="dark"] .tv :is(button, input, a):focus-visible,
+  html[data-theme="dark"] .tv-plot-scroll:focus-visible { outline-color: #ebbd78; }
+  html[data-theme="dark"] .tv :is(th, td) { border-color: #3d565d; }
+  html[data-theme="dark"] .tv thead th { color: #bfd1d5; }
+  /* Only the fixed light swatches are replaced; numeric heatmap alpha is unchanged. */
+  html[data-theme="dark"] .tv td[style*="#fff"] { background: #20343b!important; }
+  html[data-theme="dark"] .tv td[style*="#d4eae7"] { background: #416d66!important; }
+  html[data-theme="dark"] .tv td[style*="#edf0ed"] { background: #344c47!important; }
+  html[data-theme="dark"] .tv-token { background: #2b4b55; border-color: #86b8c2; }
+  html[data-theme="dark"] .tv-token.piece { background: #534331; border-color: #dbb17b; }
+  html[data-theme="dark"] .tv-token.hidden-token { background: #b5dce2; color: #153641; border-color: #b5dce2; }
+  html[data-theme="dark"] .tv-dot { background: #3c5358; }
+  html[data-theme="dark"] .tv-dot.on { background: var(--tv-blue); }
+  html[data-theme="dark"] .tv svg text { fill: #d1e4e6; }
+  html[data-theme="dark"] .tv-chart .axis { stroke: #8aa9af; }
+  html[data-theme="dark"] .tv-chart .grid { stroke: #3c555c; }
+  html[data-theme="dark"] .tv-chart .series1 { stroke: var(--tv-blue); }
+  html[data-theme="dark"] .tv-chart .series2 { stroke: var(--tv-rose); }
+  html[data-theme="dark"] .tv svg [stroke="#a5bec4"] { stroke: #7f9fa8; }
+  html[data-theme="dark"] .tv svg [fill="#1e748d"] { fill: var(--tv-blue); }
+  html[data-theme="dark"] .tv svg :is([fill="#ab4960"], [fill="#b15269"]) { fill: var(--tv-rose); }
+  html[data-theme="dark"] .tv svg [fill="#b47a2c"] { fill: var(--tv-gold); }
+  html[data-theme="dark"] .tv svg [fill="#e4f1f2"] { fill: #284953; }
+  html[data-theme="dark"] .tv svg [fill="#f4e7ea"] { fill: #4a3440; }
+  html[data-theme="dark"] .tv :is(.tv-bar-track, .tv-track) { background: #354e55; }
+  html[data-theme="dark"] .tv-matrix .tv-cell { background: #315853; color: #d3f0e9; border-color: #719b96; }
+  html[data-theme="dark"] .tv-matrix .tv-cell.wrong { background: #583643; color: #ffcfda; border-color: #a97080; }
+  html[data-theme="dark"] .tv-matrix .tv-cell[aria-pressed="true"] { outline-color: #efbf79; }
+  html[data-theme="dark"] .tv-reveal { background: #3d3728; color: #ebdfc7; }
+  html[data-theme="dark"] .tv-marker { background: #ed9eaf; }
+  html[data-theme="dark"] .tv-mini-list li { border-color: #466068; }
+  html[data-theme="dark"] .tv-waffle i { background: #83bcb2; }
+  html[data-theme="dark"] .tv-waffle i.error { background: #e4959b; }
+  html[data-theme="dark"] .tv-muted { color: #b1c7cc; }
+  html[data-theme="dark"] .tv-trim { background: #122932; border: 1px solid #46626c; }
+  html[data-theme="dark"] .tv-trim mark { background: #d8b87e; color: #172b32; }
+  /* Retain each coordinate's inline color and opacity on a quiet common canvas. */
+  html[data-theme="dark"] .tv-strip { background: #182b33; }
+  html[data-theme="dark"] .tv-strip i { box-shadow: inset 0 0 0 1px #a3c1c518; }
+  html[data-theme="dark"] .tv-votes button[data-v="T"] { background: #2c4a5a; color: #d4eaf7; }
+  html[data-theme="dark"] .tv-votes button[data-v="H"] { background: #513642; color: #f8d4e0; }
+  html[data-theme="dark"] .tv-boundary { stroke: var(--tv-gold); }
+}

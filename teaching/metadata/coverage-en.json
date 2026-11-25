@@ -1,0 +1,888 @@
+{
+  "title": "Tragedy or History? Reading Genre with Models",
+  "nativeRoute": "/play/genre-case-study/",
+  "slideCount": 68,
+  "groups": {
+    "2": "2. From words to models",
+    "2.2": "2.2. Contextual models",
+    "ex": "Further investigations"
+  },
+  "sourceGroups": {
+    "2": "2. Foundations of text classification",
+    "2.2": "2.2. Deep-learning text classification",
+    "ex": "Exercises"
+  },
+  "sections": [
+    {
+      "id": "1",
+      "title": "1. A disputed genre",
+      "pages": "421–426",
+      "parent": null,
+      "sourceHeading": "1. Introduction",
+      "slides": [
+        {
+          "number": 1,
+          "title": "Why do we read the same work differently?",
+          "pages": "421",
+          "figures": [],
+          "visuals": [
+            "case-route"
+          ],
+          "lab": null
+        },
+        {
+          "number": 2,
+          "title": "A 1608 title and a 1623 catalogue",
+          "pages": "421–422",
+          "figures": [
+            1,
+            2
+          ],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 3,
+          "title": "Defining genre through essential features",
+          "pages": "423",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 4,
+          "title": "Reading genre relationally: a place in the histories",
+          "pages": "423–424",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 5,
+          "title": "From frequencies to contexts and relations",
+          "pages": "424–426",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        }
+      ]
+    },
+    {
+      "id": "2.1",
+      "title": "2.1. Counts and classification",
+      "pages": "426–431",
+      "parent": "2",
+      "sourceHeading": "2.1. Machine-learning text classification",
+      "slides": [
+        {
+          "number": 6,
+          "title": "Features and labels: translating a question into a task",
+          "pages": "426–427",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 7,
+          "title": "Passage 1: Gloucester’s proclamation",
+          "pages": "427",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 8,
+          "title": "Passage 2: bodily exposure and madness in the storm",
+          "pages": "428",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 9,
+          "title": "Bag of words: counting while discarding order",
+          "pages": "428–429",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/bag-of-words/"
+        },
+        {
+          "number": 10,
+          "title": "TF-IDF: frequent here, uncommon elsewhere",
+          "pages": "429–430",
+          "figures": [],
+          "visuals": [
+            "tfidf"
+          ],
+          "lab": "/play/bag-of-words/"
+        },
+        {
+          "number": 11,
+          "title": "The same vectors, different classification rules",
+          "pages": "430",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 12,
+          "title": "The gains and limits of statistical reading",
+          "pages": "430–431",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        }
+      ]
+    },
+    {
+      "id": "2.2.1",
+      "title": "(1) Representing text",
+      "pages": "431–434",
+      "parent": "2.2",
+      "sourceHeading": "(1) Embedding",
+      "slides": [
+        {
+          "number": 13,
+          "title": "Embedding: from counts to relational coordinates",
+          "pages": "431–432",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/embeddings/"
+        },
+        {
+          "number": 14,
+          "title": "The same field of death, different relations",
+          "pages": "432",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/context/"
+        },
+        {
+          "number": 15,
+          "title": "Reading the illustrative two-dimensional map",
+          "pages": "433",
+          "figures": [
+            3
+          ],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 16,
+          "title": "From word vectors to scenes and works",
+          "pages": "434",
+          "figures": [],
+          "visuals": [
+            "representation-pipeline"
+          ],
+          "lab": "/play/embeddings/"
+        }
+      ]
+    },
+    {
+      "id": "2.2.2",
+      "title": "(2) Learning from language",
+      "pages": "434–439",
+      "parent": "2.2",
+      "sourceHeading": "(2) Pre-training",
+      "slides": [
+        {
+          "number": 17,
+          "title": "Embedding is a form; pretraining is a learning process",
+          "pages": "434–435",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 18,
+          "title": "Self-supervision: deriving targets from the text",
+          "pages": "435–436",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/finish-the-line/"
+        },
+        {
+          "number": 19,
+          "title": "The book’s six masked-language prompts",
+          "pages": "436",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/finish-the-line/"
+        },
+        {
+          "number": 20,
+          "title": "Prediction → loss → backpropagation → update",
+          "pages": "436–437",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 21,
+          "title": "Semantic-axis profiles: names are interpretations",
+          "pages": "437–439",
+          "figures": [
+            4
+          ],
+          "visuals": [],
+          "lab": null
+        }
+      ]
+    },
+    {
+      "id": "2.2.3",
+      "title": "(3) Learning genre labels",
+      "pages": "439–443",
+      "parent": "2.2",
+      "sourceHeading": "(3) Fine tuning",
+      "slides": [
+        {
+          "number": 22,
+          "title": "Learning a boundary from labels",
+          "pages": "439–440",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/train-classifier/"
+        },
+        {
+          "number": 23,
+          "title": "Comparing relations before and after fine tuning",
+          "pages": "440–441",
+          "figures": [
+            5
+          ],
+          "visuals": [],
+          "lab": "/play/embeddings/"
+        },
+        {
+          "number": 24,
+          "title": "Four operations in fine tuning",
+          "pages": "441",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/train-classifier/"
+        },
+        {
+          "number": 25,
+          "title": "A map of plays and Lear at the boundary",
+          "pages": "441–443",
+          "figures": [
+            6
+          ],
+          "visuals": [],
+          "lab": null
+        }
+      ]
+    },
+    {
+      "id": "2.2.4",
+      "title": "(4) Inspecting attention",
+      "pages": "443–450",
+      "parent": "2.2",
+      "sourceHeading": "(4) Attention score",
+      "slides": [
+        {
+          "number": 26,
+          "title": "What does attention record?",
+          "pages": "443–444",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/attention/"
+        },
+        {
+          "number": 27,
+          "title": "The context attended to by proclaim",
+          "pages": "444",
+          "figures": [
+            7
+          ],
+          "visuals": [],
+          "lab": "/play/attention/"
+        },
+        {
+          "number": 28,
+          "title": "The relational patterns of death and grave",
+          "pages": "445–446",
+          "figures": [
+            8
+          ],
+          "visuals": [],
+          "lab": "/play/attention/"
+        },
+        {
+          "number": 29,
+          "title": "Multi-head attention: the four-lens analogy",
+          "pages": "446–447",
+          "figures": [
+            9
+          ],
+          "visuals": [],
+          "lab": "/play/attention/"
+        },
+        {
+          "number": 30,
+          "title": "Interpreting combined representations",
+          "pages": "447–448",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/attention/"
+        },
+        {
+          "number": 31,
+          "title": "From interpretability to distant reading",
+          "pages": "448–450",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/lime-lab/"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "3. A genre-classification experiment",
+      "pages": "450–451",
+      "parent": null,
+      "sourceHeading": "3. A practical classification of Renaissance drama",
+      "slides": [
+        {
+          "number": 32,
+          "title": "Define the practical question and its scope",
+          "pages": "450",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/train-classifier/"
+        },
+        {
+          "number": 33,
+          "title": "The seven-stage research workflow",
+          "pages": "451",
+          "figures": [
+            10
+          ],
+          "visuals": [],
+          "lab": null
+        }
+      ]
+    },
+    {
+      "id": "3.1",
+      "title": "3.1. Source texts and editions",
+      "pages": "451–452",
+      "parent": "3",
+      "sourceHeading": "3.1. Source collection and corpus building: obtaining texts in TEI-XML",
+      "slides": [
+        {
+          "number": 34,
+          "title": "Obtain TEI-XML from Folger",
+          "pages": "451–452",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 35,
+          "title": "Why read the TEI tags?",
+          "pages": "452",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 36,
+          "title": "Editions, bibliography and an EEBO-TCP extension",
+          "pages": "452",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        }
+      ]
+    },
+    {
+      "id": "3.2",
+      "title": "3.2. Preparing dialogue",
+      "pages": "452–453",
+      "parent": "3",
+      "sourceHeading": "3.2. Text preprocessing and tokenization",
+      "slides": [
+        {
+          "number": 37,
+          "title": "Extract speech-only text",
+          "pages": "452–453",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 38,
+          "title": "Name masking is a separate experiment",
+          "pages": "453",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/classifier-lab/"
+        },
+        {
+          "number": 39,
+          "title": "Words and tokens are not the same unit",
+          "pages": "453–454",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/tokenizer/"
+        }
+      ]
+    },
+    {
+      "id": "3.3",
+      "title": "3.3. Labels, chunks and splits",
+      "pages": "454–456",
+      "parent": "3",
+      "sourceHeading": "3.3. Constructing and labelling training data",
+      "slides": [
+        {
+          "number": 40,
+          "title": "data_a and data_b define the research question",
+          "pages": "454–455",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/train-classifier/"
+        },
+        {
+          "number": 41,
+          "title": "Read the 510-token chunking code",
+          "pages": "454–455",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 42,
+          "title": "Chunk counts and diversity of works",
+          "pages": "455",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 43,
+          "title": "Balance the classes by undersampling",
+          "pages": "455–456",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 44,
+          "title": "The 80:20 stratified split and work-level splitting",
+          "pages": "455–456",
+          "figures": [],
+          "visuals": [
+            "split-comparison"
+          ],
+          "lab": "/play/train-classifier/"
+        }
+      ]
+    },
+    {
+      "id": "3.4",
+      "title": "3.4. Training and loss",
+      "pages": "457–459",
+      "parent": "3",
+      "sourceHeading": "3.4. Fine-tuning the pretrained model",
+      "slides": [
+        {
+          "number": 45,
+          "title": "Read the training configuration",
+          "pages": "457",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/train-classifier/"
+        },
+        {
+          "number": 46,
+          "title": "Understand epochs, batches and warmup",
+          "pages": "457",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 47,
+          "title": "The original training and validation loss curves",
+          "pages": "458",
+          "figures": [
+            11
+          ],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 48,
+          "title": "Use the curves to question overfitting",
+          "pages": "459",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        }
+      ]
+    },
+    {
+      "id": "3.5",
+      "title": "3.5. Evaluation and evidence",
+      "pages": "459–460",
+      "parent": "3",
+      "sourceHeading": "3.5. Model evaluation and validation metrics",
+      "slides": [
+        {
+          "number": 49,
+          "title": "Accuracy: how many correct, on which material?",
+          "pages": "459",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 50,
+          "title": "The four cells of the confusion matrix",
+          "pages": "459–460",
+          "figures": [
+            12
+          ],
+          "visuals": [
+            "matrix"
+          ],
+          "lab": null
+        },
+        {
+          "number": 51,
+          "title": "Reread errors and delimit the evaluation claim",
+          "pages": "460",
+          "figures": [],
+          "visuals": [
+            "model-comparison"
+          ],
+          "lab": "/play/classifier-lab/"
+        }
+      ]
+    },
+    {
+      "id": "3.6",
+      "title": "3.6. Explaining contrasting passages",
+      "pages": "461–464",
+      "parent": "3",
+      "sourceHeading": "3.6. Attention-based interpretability analysis",
+      "slides": [
+        {
+          "number": 52,
+          "title": "Preserve the section title; distinguish explanation methods",
+          "pages": "461",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/lime-lab/"
+        },
+        {
+          "number": 53,
+          "title": "Read figure 13’s passage before its weights",
+          "pages": "461–462",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 54,
+          "title": "Figure 13: kingship, law and judgment together",
+          "pages": "461–462",
+          "figures": [
+            13
+          ],
+          "visuals": [],
+          "lab": "/play/lime-lab/"
+        },
+        {
+          "number": 55,
+          "title": "Figure 14’s passage: one person, many people",
+          "pages": "462–463",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 56,
+          "title": "Figure 14: the discord of time and music",
+          "pages": "463–464",
+          "figures": [
+            14
+          ],
+          "visuals": [],
+          "lab": "/play/lime-lab/"
+        },
+        {
+          "number": 57,
+          "title": "Compare both explanations and connect to a new run",
+          "pages": "461–464",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/attention/"
+        }
+      ]
+    },
+    {
+      "id": "3.7",
+      "title": "3.7. Reading unseen plays",
+      "pages": "464–466",
+      "parent": "3",
+      "sourceHeading": "3.7. Predicting the genre of new texts",
+      "slides": [
+        {
+          "number": 58,
+          "title": "From data_c to predictions.csv",
+          "pages": "464",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/classifier-lab/"
+        },
+        {
+          "number": 59,
+          "title": "The complete Pericles passage printed in the book",
+          "pages": "465",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 60,
+          "title": "0.5987 and political self-justification",
+          "pages": "465–466",
+          "figures": [],
+          "visuals": [
+            "threshold"
+          ],
+          "lab": null
+        },
+        {
+          "number": 61,
+          "title": "Read a work through its distribution of chunks",
+          "pages": "464–466",
+          "figures": [],
+          "visuals": [
+            "votes"
+          ],
+          "lab": null
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "4. What genre labels reveal",
+      "pages": "466–467",
+      "parent": null,
+      "sourceHeading": "4. Conclusion",
+      "slides": [
+        {
+          "number": 62,
+          "title": "Is genre essence or relation?",
+          "pages": "466–467",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 63,
+          "title": "A research record connecting results, explanations and criticism",
+          "pages": "467",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/classifier-lab/"
+        }
+      ]
+    },
+    {
+      "id": "ex1",
+      "title": "Investigation 1 · Compare explanations",
+      "pages": "468",
+      "parent": "ex",
+      "sourceHeading": "Exercises · ➊ Basic",
+      "slides": [
+        {
+          "number": 64,
+          "title": "Basic exercise: compare three explanation files",
+          "pages": "468",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/lime-lab/"
+        }
+      ]
+    },
+    {
+      "id": "ex2",
+      "title": "Investigation 2 · Transfer to Hardy",
+      "pages": "468–469",
+      "parent": "ex",
+      "sourceHeading": "Exercises · ➋ Intermediate",
+      "slides": [
+        {
+          "number": 65,
+          "title": "Intermediate 1: train Victorian versus Modernist",
+          "pages": "468",
+          "figures": [],
+          "visuals": [],
+          "lab": "/play/train-classifier/"
+        },
+        {
+          "number": 66,
+          "title": "Intermediate 2: Hardy’s score distribution and boundary chunks",
+          "pages": "468–469",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        }
+      ]
+    },
+    {
+      "id": "ex3",
+      "title": "Investigation 3 · Rethink the labels",
+      "pages": "469–470",
+      "parent": "ex",
+      "sourceHeading": "Exercises · ➌ Advanced",
+      "slides": [
+        {
+          "number": 67,
+          "title": "Advanced 1: redesign the labels",
+          "pages": "469",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        },
+        {
+          "number": 68,
+          "title": "Advanced 2: style markers and critical synthesis",
+          "pages": "469–470",
+          "figures": [],
+          "visuals": [],
+          "lab": null
+        }
+      ]
+    }
+  ],
+  "figures": [
+    {
+      "n": 1,
+      "title": "King Lear: the first quarto of 1608",
+      "page": 422,
+      "kind": "source",
+      "src": "assets/figure-01.png"
+    },
+    {
+      "n": 2,
+      "title": "The First Folio of 1623",
+      "page": 422,
+      "kind": "source",
+      "src": "assets/figure-02.png"
+    },
+    {
+      "n": 3,
+      "title": "An example embedding of tragic and historical vocabulary",
+      "page": 433,
+      "kind": "concept",
+      "src": "assets/figure-03.png"
+    },
+    {
+      "n": 4,
+      "title": "Illustrative semantic axes and word-embedding profiles formed by pretraining",
+      "page": 438,
+      "kind": "concept",
+      "src": "assets/figure-04.png"
+    },
+    {
+      "n": 5,
+      "title": "Repositioning word embeddings after fine tuning",
+      "page": 440,
+      "kind": "concept",
+      "src": "assets/figure-05.png"
+    },
+    {
+      "n": 6,
+      "title": "Illustrative play-embedding clusters and genre boundaries after fine tuning",
+      "page": 442,
+      "kind": "concept",
+      "src": "assets/figure-06.png"
+    },
+    {
+      "n": 7,
+      "title": "The basic operation of attention",
+      "page": 444,
+      "kind": "concept",
+      "src": "assets/figure-07.png"
+    },
+    {
+      "n": 8,
+      "title": "Different attention patterns for related vocabulary in context",
+      "page": 445,
+      "kind": "concept",
+      "src": "assets/figure-08.png"
+    },
+    {
+      "n": 9,
+      "title": "Multi-head attention: several lenses working in parallel",
+      "page": 447,
+      "kind": "concept",
+      "src": "assets/figure-09.png"
+    },
+    {
+      "n": 10,
+      "title": "The practical workflow for deep-learning text classification",
+      "page": 451,
+      "kind": "workflow",
+      "src": "assets/figure-10.png"
+    },
+    {
+      "n": 11,
+      "title": "Training and validation loss curves",
+      "page": 458,
+      "kind": "book-result",
+      "src": "assets/figure-11.png"
+    },
+    {
+      "n": 12,
+      "title": "Confusion matrix",
+      "page": 460,
+      "kind": "book-result",
+      "src": "assets/figure-12.png"
+    },
+    {
+      "n": 13,
+      "title": "Attention-score-based analysis",
+      "page": 461,
+      "kind": "book-result",
+      "src": "assets/figure-13.png"
+    },
+    {
+      "n": 14,
+      "title": "Attention-score-based analysis (extended model)",
+      "page": 463,
+      "kind": "book-result",
+      "src": "assets/figure-14.png"
+    }
+  ],
+  "originalVisuals": [
+    {
+      "slide": 1,
+      "type": "Case route",
+      "evidence": "conceptual navigation"
+    },
+    {
+      "slide": 16,
+      "type": "Representation pipeline",
+      "evidence": "conceptual, no invented measurements"
+    },
+    {
+      "slide": 44,
+      "type": "Training/evaluation split diagram",
+      "evidence": "actual saved model split records"
+    },
+    {
+      "slide": 51,
+      "type": "Ten-model grouped comparison",
+      "evidence": "actual saved accuracy and macro-F1 metrics"
+    }
+  ]
+}

@@ -28,3 +28,104 @@ dialog{width:min(96vw,1400px);max-height:94vh;padding:22px;border:1px solid var(
 .reading-excerpt{margin:25px 0 30px;padding:24px 28px;border-left:3px solid #ba9561;border-radius:0 10px 10px 0;background:#f8f0e0;font:1.08rem/1.85 var(--serif);color:#584a36;white-space:pre-wrap;word-break:keep-all}.reading-excerpt[lang=ko]{font-family:var(--sans);font-size:1rem}@media(max-width:600px){.reading-excerpt{padding:20px;font-size:1rem}.reading-excerpt[lang=ko]{font-size:.96rem}}
 
 .stage-credit{border-top:1px solid var(--line);padding-top:14px;margin:20px 0 0;font-size:.78rem;line-height:1.65;color:var(--muted)}.stage-credit button{border:0;background:none;padding:0;min-height:0;font-size:inherit;color:var(--blue);text-decoration:underline;text-underline-offset:3px;margin-left:5px;font-weight:550}
+
+/* The teaching stage and its reading material share the resolved site theme. */
+@media screen {
+  html[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #111f24;
+    --ink: #e1ebe9;
+    --muted: #afc3c2;
+    --line: #405b60;
+    --blue: #91d0d4;
+    --mint: #243c35;
+    --warm: #3a3124;
+    --case-surface: #1a2c31;
+    --case-raised: #263e43;
+    --case-warm: #2c2c24;
+    --case-warm-line: #6b624b;
+  }
+  html[data-theme="dark"] :is(button, select, textarea, input) { color: var(--ink); background: var(--case-surface); border-color: var(--line); }
+  html[data-theme="dark"] :is(input, textarea)::placeholder { color: #a7bbb9; opacity: 1; }
+  html[data-theme="dark"] button:hover:not(:disabled) { background: #304d50; border-color: #8bb9b7; }
+  html[data-theme="dark"] :is(button, a, select, textarea, input, summary, [tabindex="0"]):focus-visible { outline-color: #e9bc78; }
+  html[data-theme="dark"] ::selection { background: #466d6d; color: #fff; }
+  html[data-theme="dark"] .skip-link { background: var(--case-surface); }
+  html[data-theme="dark"] :is(.languages button[aria-pressed="true"], .presentation-toggle) { background: #a7d3cf; color: #122c31; border-color: #a7d3cf; }
+  html[data-theme="dark"] .presentation-toggle:hover:not(:disabled) { background: #c2e4e1; color: #122c31; }
+  html[data-theme="dark"] .teaching-toolbar { background: #14252bed; }
+  html[data-theme="dark"] .course-outline { background: var(--case-surface); }
+  html[data-theme="dark"] .outline-button { background: transparent; }
+  html[data-theme="dark"] .outline-button[aria-current="step"] { background: #2b4744; border-color: #82aaa0; }
+  html[data-theme="dark"] .progress { background: #2e4846; }
+  html[data-theme="dark"] #progress-bar { background: #92c8ae; }
+  html[data-theme="dark"] .teaching-stage { background: var(--case-surface); border-color: #496269; box-shadow: 0 12px 42px #0002; }
+  html[data-theme="dark"] .slide-takeaway { color: #bfd3d0; }
+  html[data-theme="dark"] .stage-prompt { background: #263e35; }
+  html[data-theme="dark"] .stage-prompt span { color: #a1c5ad; }
+  html[data-theme="dark"] .stage-passage { background: var(--case-warm); }
+  html[data-theme="dark"] .slide-body > ul { background: #253b32; }
+  html[data-theme="dark"] .practice-section { background: #1d332d; border-color: #476653; }
+  html[data-theme="dark"] .task-number { color: #a5c6ad; }
+  html[data-theme="dark"] .practice-tasks p { color: #bed2c6; }
+  html[data-theme="dark"] .practice-card { background: #20352f; border-color: #527361; }
+  html[data-theme="dark"] .station-number { border-color: #709682; color: #b8dfc6; }
+  html[data-theme="dark"] .practice-actions button { background: #377667; border-color: #7ab8a7; color: #fff; }
+  html[data-theme="dark"] .practice-actions button:hover:not(:disabled) { background: #448b79; }
+  html[data-theme="dark"] .all-practice { border-color: #496550; }
+  html[data-theme="dark"] .slide-navigation { background: #14252bf5; border-color: #4b6567; box-shadow: 0 -5px 25px #0003; }
+  html[data-theme="dark"] .primary { background: #92ced1; border-color: #a9dadd; color: #102e35; }
+  html[data-theme="dark"] .primary:hover:not(:disabled) { background: #b5e0e2; color: #102e35; }
+  html[data-theme="dark"] .text-button { background: none; }
+  html[data-theme="dark"] dialog { background: var(--case-surface); box-shadow: 0 25px 100px #0009; }
+  html[data-theme="dark"] dialog::backdrop { background: #030e14d9; }
+  html[data-theme="dark"] :is(#practice-dialog, #practice-dialog > .dialog-top) { background: var(--case-surface); }
+  html[data-theme="dark"] .practice-dialog-tools { background: #233b35; }
+  html[data-theme="dark"] #practice-frame-host iframe { background: #101b24; }
+  /* Original raster figures retain their original pixels and white canvas. */
+  html[data-theme="dark"] .book-figure { background: var(--case-surface); }
+  html[data-theme="dark"] .figure-button,
+  html[data-theme="dark"] .figure-button:hover:not(:disabled) { background: #fff; }
+  html[data-theme="dark"] .figure-scroll img { background: #fff; }
+  html[data-theme="dark"] .figure-kind { background: #29444a; color: #cee2e2; }
+  html[data-theme="dark"] :is(.kind-concept, .badge) { background: #4d3c24; color: #f5d099; }
+  html[data-theme="dark"] .kind-book-result { background: #2b4b36; color: #c0e1c2; }
+  html[data-theme="dark"] .book-reader { background: #252b25; border-color: var(--case-warm-line); box-shadow: 0 5px 18px #0002; }
+  html[data-theme="dark"] :is(.reader-top, .reader-note, .translation, .reader-languages) { border-color: var(--case-warm-line); }
+  html[data-theme="dark"] :is(.reader-top small, .reader-note, .translation summary) { color: #c6bfac; }
+  html[data-theme="dark"] .reader-top button { background: #38382c; border-color: #7e7458; }
+  html[data-theme="dark"] .passage-original { color: #e7e4d8; }
+  html[data-theme="dark"] .reader-languages { background: #2e3027; }
+  html[data-theme="dark"] .reader-languages button { background: transparent; border-color: #756d57; }
+  html[data-theme="dark"] .reader-languages button[aria-pressed="true"] { background: #5c5137; color: #fff0cd; border-color: #bdab81; }
+  html[data-theme="dark"] .code-block { background: #101f2b; border: 1px solid #385363; }
+  html[data-theme="dark"] .code-block figcaption { background: #213947; }
+  html[data-theme="dark"] .widget { background: var(--case-surface); }
+  html[data-theme="dark"] .widget-result { background: #2b4147; }
+  html[data-theme="dark"] .matrix-cell.correct { background: #316f86; color: #fff; }
+  html[data-theme="dark"] .matrix-cell.error { background: #354853; color: #e6f0f4; }
+  html[data-theme="dark"] .matrix-cell[aria-pressed="true"] { border-color: #e8b773; box-shadow: 0 0 0 2px #e8b773; }
+  html[data-theme="dark"] .vote-chunks button[data-vote="T"] { background: #483454; color: #e5caf7; }
+  html[data-theme="dark"] .vote-chunks button[data-vote="H"] { background: #284936; color: #bfe1c9; }
+  html[data-theme="dark"] .vote-bar { background: #293b3b; }
+  html[data-theme="dark"] .vote-tragedy { background: #83649a; color: #fff; }
+  html[data-theme="dark"] .vote-history { background: #547d5e; color: #fff; }
+  html[data-theme="dark"] .case-route button { background: #253d34; border-color: #496959; }
+  html[data-theme="dark"] .case-route button > span { color: #a7d1b6; }
+  html[data-theme="dark"] .case-evidence-label { background: #294b38; color: #bfe4c9; }
+  html[data-theme="dark"] .case-pipeline li { background: #243c42; border-color: #466972; }
+  html[data-theme="dark"] :is(.pipeline-number, .case-pipeline li + li::before) { color: #9dc9d1; }
+  html[data-theme="dark"] .case-split-grid article { background: #203238; border-color: #476169; }
+  html[data-theme="dark"] .case-split-flow > div { background: #304c52; }
+  html[data-theme="dark"] .case-split-flow > div:last-child { background: #324d36; }
+  html[data-theme="dark"] .case-metric-toggle button[aria-pressed="true"] { background: #91ced1; color: #143038; }
+  html[data-theme="dark"] .case-bar-row { background: transparent; }
+  html[data-theme="dark"] .case-bar-row[aria-pressed="true"] { border-color: #71989f; background: #2b444b; }
+  html[data-theme="dark"] .case-bar-track { background: #354a50; }
+  html[data-theme="dark"] .case-bar-track > span { background: #70aec2; }
+  html[data-theme="dark"] .group-1 .case-bar-track > span { background: #a0bd8e; }
+  html[data-theme="dark"] .group-2 .case-bar-track > span { background: #d5ae7d; }
+  html[data-theme="dark"] .case-run-detail { background: #253b38; border-color: #496761; }
+  html[data-theme="dark"] .reading-excerpt { background: #302d24; color: #e3d6bf; border-color: #d0ae79; }
+  html[data-theme="dark"] .stage-credit button { background: none; }
+}

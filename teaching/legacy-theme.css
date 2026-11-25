@@ -1,0 +1,31 @@
+/* Companion to the legacy Word Lab's inline CSS; included by the shared head. */
+@media screen {
+  html[data-theme="dark"] {
+    color-scheme: dark;
+    --paper: #111f27;
+    --card: #1c2f38;
+    --ink: #e1ecef;
+    --sub: #b4c8cf;
+    --line: #47616b;
+    --blue: #9ad1e5;
+    --mint: #2a473b;
+    --focus: #edbb75;
+  }
+  html[data-theme="dark"] body { color: var(--ink); background: var(--paper); }
+  html[data-theme="dark"] a { color: var(--blue); }
+  html[data-theme="dark"] ::selection { background: #4c7183; color: #fff; }
+  html[data-theme="dark"] .skip:focus { background: var(--card); }
+  html[data-theme="dark"] .input-row input { background: #142631; border-color: #7a9aa9; }
+  html[data-theme="dark"] .input-row input::placeholder { color: #a9bdc7; opacity: 1; }
+  html[data-theme="dark"] .primary,
+  html[data-theme="dark"] .chip[aria-pressed="true"] { background: #a3d3e2; color: #14313c; border-color: #a3d3e2; }
+  html[data-theme="dark"] .primary:hover { background: #c1e5ee; }
+  html[data-theme="dark"] :is(.chip, .alt) { color: #c6e4ed; border-color: #6a8b98; }
+  html[data-theme="dark"] :is(.chip:hover, .alt:hover) { background: #304b57; }
+  html[data-theme="dark"] .chip[aria-pressed="true"]:hover { background: #c1e5ee; }
+  html[data-theme="dark"] .result-head h2 { color: #d5edf1; }
+  html[data-theme="dark"] .tag { color: #c5e5ce; }
+  html[data-theme="dark"] .piece { background: #2a444e; border-color: #668591; }
+  html[data-theme="dark"] :is(th, td) { border-color: #425e68; }
+  html[data-theme="dark"] .activity { border-color: #8fbea3; }
+}

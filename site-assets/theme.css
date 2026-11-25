@@ -1,0 +1,41 @@
+:root{--site-bg:#fafbfd;--site-surface:#fff;--site-ink:#172d39;--site-muted:#526572;--site-line:#cbd8df;--site-pale:#edf4fa;--site-link:#205c98}
+html[data-theme=dark]{--site-bg:#101d25;--site-surface:#182a34;--site-ink:#e6edf1;--site-muted:#b3c4ce;--site-line:#405762;--site-pale:#203b4b;--site-link:#94c9ff;color-scheme:dark}
+html[data-theme=light]{color-scheme:light}
+html[data-theme] body{background-color:var(--site-bg);color:var(--site-ink)}
+.site-appearance{box-sizing:border-box;display:flex;align-items:center;justify-content:flex-end;gap:9px;padding:7px max(20px,calc((100vw - 1376px)/2));min-height:46px;width:100%;background:var(--site-bg);color:var(--site-muted);border-bottom:1px solid var(--site-line);font:500 13px/1.4 system-ui,-apple-system,sans-serif;position:relative;z-index:12;flex-shrink:0}
+.site-appearance label{margin:0;font:inherit;color:inherit}.site-appearance select{box-sizing:border-box;width:auto;min-width:98px;min-height:32px;padding:5px 27px 5px 10px;border:1px solid var(--site-line);border-radius:7px;background:var(--site-surface);color:var(--site-ink);font:600 13px/1.4 system-ui,-apple-system,sans-serif}
+.site-appearance select:focus-visible{outline:3px solid #c69b55;outline-offset:2px}
+/* The homepage uses these surfaces on both hosting origins. */
+html[data-theme=dark] .wrap .card,html[data-theme=dark] .wrap .panel{background:var(--site-surface);border-color:var(--site-line);color:var(--site-ink)}
+html[data-theme=dark] .wrap .card p,html[data-theme=dark] .wrap .role,html[data-theme=dark] .wrap .tile span,html[data-theme=dark] .wrap .gnum,html[data-theme=dark] .wrap footer{color:var(--site-muted)}
+html[data-theme=dark] .wrap .card .tag,html[data-theme=dark] .wrap .tile,html[data-theme=dark] .wrap .gbar,html[data-theme=dark] .wrap .links a{background:var(--site-pale);border-color:var(--site-line)}
+html[data-theme=dark] .wrap .card .tag,html[data-theme=dark] .wrap .card .go,html[data-theme=dark] .wrap .tile b,html[data-theme=dark] .wrap a,html[data-theme=dark] .wrap h3.sec{color:var(--site-link)}
+html[data-theme=dark] .wrap .gname{color:var(--site-ink)}
+html[data-theme=dark] .wrap [style*="color:#4b5563"]{color:var(--site-muted)!important}
+/* Gradio supplies its own dark control tokens. The custom teaching HTML needs
+   the same treatment; chart/image pixels and model values remain unchanged. */
+html[data-theme] body:has(gradio-app){background:var(--site-bg)!important;color:var(--site-ink)!important}
+html[data-theme] gradio-app{background:var(--site-bg)}
+html[data-theme] gradio-app footer{display:none!important}
+html[data-theme=dark] .gradio-container{background:var(--site-bg)}
+html[data-theme=dark] .station-card{background:var(--site-surface)!important;border-color:var(--site-line)!important;color:var(--site-ink)!important}
+html[data-theme=dark] .station-card p,html[data-theme=dark] .station-intro,html[data-theme=dark] .station-note,html[data-theme=dark] .station-part{color:var(--site-muted)!important}
+html[data-theme=dark] .station-number,html[data-theme=dark] .station-open,html[data-theme=dark] .howto .label-wrap span{color:var(--site-link)!important}
+html[data-theme=dark] .chapter-card{background:var(--site-pale)!important;border-color:var(--site-line)!important;color:var(--site-ink)!important}
+html[data-theme=dark] .gradio-container [style*="color:#101418"],html[data-theme=dark] .gradio-container [style*="color: #101418"]{color:var(--site-ink)!important}
+html[data-theme=dark] .gradio-container [style*="color:#4b5563"],html[data-theme=dark] .gradio-container [style*="color: #4b5563"],html[data-theme=dark] .gradio-container [style*="color:#8a8f98"],html[data-theme=dark] .gradio-container [style*="color:#a15c00"]{color:var(--site-muted)!important}
+html[data-theme=dark] .gradio-container [style*="color:#1c5cab"]{color:var(--site-link)!important}
+html[data-theme=dark] .gradio-container [style*="color:#c2185b"]{color:#ff9fc5!important}
+html[data-theme=dark] .gradio-container [style*="background:#eff5fd"],html[data-theme=dark] .gradio-container [style*="background:#fdf3f6"],html[data-theme=dark] .gradio-container [style*="background:#eef7ee"],html[data-theme=dark] .gradio-container [style*="background:#fff7e6"]{background:var(--site-pale)!important}
+html[data-theme=dark] .gradio-container [style*="border:1px solid #e5e7eb"],html[data-theme=dark] .gradio-container [style*="border-bottom:1px solid #e5e7eb"]{border-color:var(--site-line)!important}
+html[data-theme=dark] .gradio-container mark{color:#172d39}
+iframe[data-theme-result]{background:var(--site-surface)!important;border-color:var(--site-line)!important}
+/* Selected tabs and compact labels must stay legible in both palettes. */
+html[data-theme=dark] .gradio-container [role=tab][aria-selected=true]{color:var(--site-link)!important;border-bottom-color:var(--site-link)!important}
+html[data-theme=light] .gradio-container [role=tab][aria-selected=true]{color:#205c98!important;border-bottom-color:#205c98!important}
+html[data-theme=light] .gradio-container .label-wrap>span,html[data-theme=light] .gradio-container [data-testid=block-info],html[data-theme=light] .gradio-container label.float{color:#3730a3!important}
+html[data-theme=light] .gradio-container button.primary{background:#5145cd!important;color:#fff!important}
+html[data-theme=light] .gradio-container button.primary:hover:not(:disabled){background:#4438b9!important}
+html[data-theme=light] .wrap footer,html[data-theme=light] .gradio-container [style*="color:#8a8f98"]{color:#5c6877!important}
+@media(max-width:600px){.site-appearance{padding:6px 14px;min-height:44px}.site-appearance select{min-height:32px}}
+@media print{.site-appearance{display:none}}

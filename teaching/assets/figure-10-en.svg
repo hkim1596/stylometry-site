@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 190" role="img" aria-labelledby="title desc">
+<title id="title">Seven stages of a text classification study</title>
+<desc id="desc">An English rendering of Figure 10's conceptual workflow: source collection, preprocessing, labelling, model training, validation, interpretation, prediction. This diagram contains no measured results.</desc>
+<rect width="1400" height="190" fill="#fff"/>
+<path d="M10 25 H175 L200 95 L175 165 H10 L35 95 Z" fill="#ee7773"/>
+<text x="110" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#152336"><tspan x="110" dy="0">Source</tspan><tspan x="110" dy="28">collection</tspan></text>
+<path d="M206 25 H371 L396 95 L371 165 H206 L231 95 Z" fill="#eaa66b"/>
+<text x="306" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#152336"><tspan x="306" dy="0">Preprocessing</tspan></text>
+<path d="M402 25 H567 L592 95 L567 165 H402 L427 95 Z" fill="#e5cb68"/>
+<text x="502" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#152336"><tspan x="502" dy="0">Labelling</tspan></text>
+<path d="M598 25 H763 L788 95 L763 165 H598 L623 95 Z" fill="#7ab790"/>
+<text x="698" y="91" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#152336"><tspan x="698" dy="0">Model</tspan><tspan x="698" dy="28">training</tspan></text>
+<path d="M794 25 H959 L984 95 L959 165 H794 L819 95 Z" fill="#71b8c1"/>
+<text x="894" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#152336"><tspan x="894" dy="0">Validation</tspan></text>
+<path d="M990 25 H1155 L1180 95 L1155 165 H990 L1015 95 Z" fill="#7e9dc6"/>
+<text x="1090" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#152336"><tspan x="1090" dy="0">Interpretation</tspan></text>
+<path d="M1186 25 H1351 L1376 95 L1351 165 H1186 L1211 95 Z" fill="#9d87bc"/>
+<text x="1286" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#152336"><tspan x="1286" dy="0">Prediction</tspan></text>
+</svg>

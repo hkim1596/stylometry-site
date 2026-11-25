@@ -1,0 +1,1678 @@
+{
+  "source": {
+    "authors": [
+      "Kim Heejin",
+      "Kang Sujin"
+    ],
+    "title": "Is it tragedy or history? Analysing Renaissance drama through deep-learning text classification",
+    "volume": "Digital Humanities: An Introductory Guide",
+    "pages": "421–470",
+    "pdfSHA256": "18387600d94cd124632dadc3dba1ce21849adb6f99b2e8799993a6cb47d9f6bc"
+  },
+  "policy": "Analytical Korean passages marked verbatim preserve source wording with layout whitespace normalized; their English translations are newly written. All other expanded readings are newly written bilingual teaching prose grounded in the source, existing verified textual checks and actual run records. Literary quotations remain separately preserved. Reference experiments, current measured runs and conceptual examples remain distinct. Visible bibliographical credit is limited to opening, closing and Sources.",
+  "slides": [
+    {
+      "slide": 1,
+      "section": "1",
+      "pages": "421",
+      "title": "Why do we read the same work differently?",
+      "newEnglishWords": 114,
+      "newKoreanCharacters": 403,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "421"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "421"
+        }
+      ]
+    },
+    {
+      "slide": 2,
+      "section": "1",
+      "pages": "421–422",
+      "title": "A 1608 title and a 1623 catalogue",
+      "newEnglishWords": 112,
+      "newKoreanCharacters": 419,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "421–422"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "421–422"
+        }
+      ]
+    },
+    {
+      "slide": 3,
+      "section": "1",
+      "pages": "423",
+      "title": "Defining genre through essential features",
+      "newEnglishWords": 116,
+      "newKoreanCharacters": 408,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "423"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "423"
+        }
+      ]
+    },
+    {
+      "slide": 4,
+      "section": "1",
+      "pages": "423–424",
+      "title": "Reading genre relationally: a place in the histories",
+      "newEnglishWords": 115,
+      "newKoreanCharacters": 408,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "423–424"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "423–424"
+        }
+      ]
+    },
+    {
+      "slide": 5,
+      "section": "1",
+      "pages": "424–426",
+      "title": "From frequencies to contexts and relations",
+      "newEnglishWords": 113,
+      "newKoreanCharacters": 385,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "424–426"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "424–426"
+        },
+        {
+          "paragraph": 3,
+          "status": "verbatim-korean-new-english-translation",
+          "sourceExcerpt": "text-classification-and-counts",
+          "sourcePages": "424",
+          "english": "A key digital-humanities method for investigating these questions is text classification. By statistically identifying linguistic similarities and differences across a large corpus, it enables computers to handle hundreds or thousands of texts that would be difficult for a human researcher to read and compare directly. Early text classification began with bag-of-words models based on word frequency. This method quantifies documents by counting how often each word appears without considering context, and estimates genre tendencies through patterns in which particular words frequently occur together. For example, if king, madness and daughter occur frequently in King Lear, comparison with similar vocabulary distributions in other tragedies can support inferences about statistical features of tragic language. This simple frequency-based approach is limited, however, in its ability to reflect deeper linguistic dimensions such as sentence structure, semantic context and shifts in tone.",
+          "koreanSHA256": "6293c7fb0402cabc5de02e5972868a7be9302d932beb576d681d25f5b819ddbe"
+        }
+      ]
+    },
+    {
+      "slide": 6,
+      "section": "2.1",
+      "pages": "426–427",
+      "title": "Features and labels: translating a question into a task",
+      "newEnglishWords": 112,
+      "newKoreanCharacters": 396,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "426–427"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "426–427"
+        }
+      ]
+    },
+    {
+      "slide": 7,
+      "section": "2.1",
+      "pages": "427",
+      "title": "Passage 1: Gloucester’s proclamation",
+      "newEnglishWords": 115,
+      "newKoreanCharacters": 428,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "427"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "427"
+        }
+      ]
+    },
+    {
+      "slide": 8,
+      "section": "2.1",
+      "pages": "428",
+      "title": "Passage 2: bodily exposure and madness in the storm",
+      "newEnglishWords": 119,
+      "newKoreanCharacters": 392,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "428"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "428"
+        }
+      ]
+    },
+    {
+      "slide": 9,
+      "section": "2.1",
+      "pages": "428–429",
+      "title": "Bag of words: counting while discarding order",
+      "newEnglishWords": 106,
+      "newKoreanCharacters": 377,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "428–429"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "428–429"
+        }
+      ]
+    },
+    {
+      "slide": 10,
+      "section": "2.1",
+      "pages": "429–430",
+      "title": "TF-IDF: frequent here, uncommon elsewhere",
+      "newEnglishWords": 120,
+      "newKoreanCharacters": 411,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "429–430"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "429–430"
+        }
+      ]
+    },
+    {
+      "slide": 11,
+      "section": "2.1",
+      "pages": "430",
+      "title": "The same vectors, different classification rules",
+      "newEnglishWords": 113,
+      "newKoreanCharacters": 388,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "430"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "430"
+        }
+      ]
+    },
+    {
+      "slide": 12,
+      "section": "2.1",
+      "pages": "430–431",
+      "title": "The gains and limits of statistical reading",
+      "newEnglishWords": 117,
+      "newKoreanCharacters": 398,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "430–431"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "430–431"
+        }
+      ]
+    },
+    {
+      "slide": 13,
+      "section": "2.2.1",
+      "pages": "431–432",
+      "title": "Embedding: from counts to relational coordinates",
+      "newEnglishWords": 173,
+      "newKoreanCharacters": 596,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "431–432",
+          "additionalEvidence": [
+            "data/visual-evidence.json",
+            "data/model-comparison.json"
+          ],
+          "purpose": "Distinguish measured visual stage from conceptual or reference supporting material."
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "431–432"
+        },
+        {
+          "paragraph": 3,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "431–432"
+        }
+      ]
+    },
+    {
+      "slide": 14,
+      "section": "2.2.1",
+      "pages": "432",
+      "title": "The same field of death, different relations",
+      "newEnglishWords": 118,
+      "newKoreanCharacters": 384,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "432"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "432"
+        },
+        {
+          "paragraph": 3,
+          "status": "verbatim-korean-new-english-translation",
+          "sourceExcerpt": "contextual-death",
+          "sourcePages": "432",
+          "english": "The important point here is that deep-learning embeddings can vary with context. Even the same word, death, can be drawn toward a history cluster in Gloucester’s speech because its sense of legal punishment is strong. In another scene, however, when death emphasizes loss and fear, it moves closer to the tragedy cluster. Such contextual embeddings capture a word not as a fixed sign but as a trajectory of meaning moving within context. This makes them particularly suitable for categories such as genre that change through relationships.",
+          "koreanSHA256": "07665444fa882cc25bdc454e5f9fb0a5fa4a76781db212f7f05ffe33184e8682"
+        }
+      ]
+    },
+    {
+      "slide": 15,
+      "section": "2.2.1",
+      "pages": "433",
+      "title": "Read the two-dimensional map alongside full vectors",
+      "newEnglishWords": 172,
+      "newKoreanCharacters": 587,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "433",
+          "additionalEvidence": [
+            "data/visual-evidence.json",
+            "data/model-comparison.json"
+          ],
+          "purpose": "Distinguish measured visual stage from conceptual or reference supporting material."
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "433"
+        },
+        {
+          "paragraph": 3,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "433"
+        }
+      ]
+    },
+    {
+      "slide": 16,
+      "section": "2.2.1",
+      "pages": "434",
+      "title": "From word vectors to scenes and works",
+      "newEnglishWords": 115,
+      "newKoreanCharacters": 379,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "434"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "434"
+        }
+      ]
+    },
+    {
+      "slide": 17,
+      "section": "2.2.2",
+      "pages": "434–435",
+      "title": "Embedding is a form; pretraining is a learning process",
+      "newEnglishWords": 112,
+      "newKoreanCharacters": 391,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "434–435"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "434–435"
+        },
+        {
+          "paragraph": 3,
+          "status": "verbatim-korean-new-english-translation",
+          "sourceExcerpt": "representation-and-learning",
+          "sourcePages": "434–435",
+          "english": "First distinguish the roles of embedding and pretraining. Embedding refers to the technical form of representing words, sentences or scenes as numeric vectors: high-dimensional arrays of real numbers. In other words, embedding converts textual meaning into coordinates consisting of hundreds of numbers. These numbers do not contain meaning from the outset. At initialization, each word vector is set to nearly random values and is merely a combination of computable numbers. Pretraining is the learning process that makes these initially meaningless arrays reflect patterns of actual language use. If embedding is a vessel for meaning, pretraining repeatedly adjusts it so that the vessel acquires linguistic content.",
+          "koreanSHA256": "8caec80adb00ad1e3a0c9a9e7590253d988f6019dd01644aa88ca03a5c97f617"
+        }
+      ]
+    },
+    {
+      "slide": 18,
+      "section": "2.2.2",
+      "pages": "435–436",
+      "title": "Self-supervision: deriving targets from the text",
+      "newEnglishWords": 114,
+      "newKoreanCharacters": 384,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "435–436"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "435–436"
+        }
+      ]
+    },
+    {
+      "slide": 19,
+      "section": "2.2.2",
+      "pages": "436",
+      "title": "Predict the gaps in six sentences",
+      "newEnglishWords": 104,
+      "newKoreanCharacters": 406,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "436"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "436"
+        }
+      ]
+    },
+    {
+      "slide": 20,
+      "section": "2.2.2",
+      "pages": "436–437",
+      "title": "Prediction → loss → backpropagation → update",
+      "newEnglishWords": 109,
+      "newKoreanCharacters": 396,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "436–437"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "436–437"
+        }
+      ]
+    },
+    {
+      "slide": 21,
+      "section": "2.2.2",
+      "pages": "437–439",
+      "title": "Semantic-axis profiles: names are interpretations",
+      "newEnglishWords": 109,
+      "newKoreanCharacters": 421,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "437–439"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "437–439"
+        }
+      ]
+    },
+    {
+      "slide": 22,
+      "section": "2.2.3",
+      "pages": "439–440",
+      "title": "Learning a boundary from labels",
+      "newEnglishWords": 107,
+      "newKoreanCharacters": 378,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "439–440"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "439–440"
+        }
+      ]
+    },
+    {
+      "slide": 23,
+      "section": "2.2.3",
+      "pages": "440–441",
+      "title": "Comparing relations before and after fine tuning",
+      "newEnglishWords": 110,
+      "newKoreanCharacters": 395,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "440–441"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "440–441"
+        }
+      ]
+    },
+    {
+      "slide": 24,
+      "section": "2.2.3",
+      "pages": "441",
+      "title": "Four operations in fine tuning",
+      "newEnglishWords": 108,
+      "newKoreanCharacters": 371,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "441"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "441"
+        }
+      ]
+    },
+    {
+      "slide": 25,
+      "section": "2.2.3",
+      "pages": "441–443",
+      "title": "A map of plays and Lear at the boundary",
+      "newEnglishWords": 112,
+      "newKoreanCharacters": 372,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "441–443"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "441–443"
+        }
+      ]
+    },
+    {
+      "slide": 26,
+      "section": "2.2.4",
+      "pages": "443–444",
+      "title": "What does attention record?",
+      "newEnglishWords": 108,
+      "newKoreanCharacters": 350,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "443–444"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "443–444"
+        }
+      ]
+    },
+    {
+      "slide": 27,
+      "section": "2.2.4",
+      "pages": "444",
+      "title": "The context attended to by proclaim",
+      "newEnglishWords": 171,
+      "newKoreanCharacters": 572,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "444",
+          "additionalEvidence": [
+            "data/visual-evidence.json",
+            "data/model-comparison.json"
+          ],
+          "purpose": "Distinguish measured visual stage from conceptual or reference supporting material."
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "444"
+        },
+        {
+          "paragraph": 3,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "444"
+        }
+      ]
+    },
+    {
+      "slide": 28,
+      "section": "2.2.4",
+      "pages": "445–446",
+      "title": "The relational patterns of death and grave",
+      "newEnglishWords": 106,
+      "newKoreanCharacters": 404,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "445–446"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "445–446"
+        }
+      ]
+    },
+    {
+      "slide": 29,
+      "section": "2.2.4",
+      "pages": "446–447",
+      "title": "Multi-head attention: the four-lens analogy",
+      "newEnglishWords": 160,
+      "newKoreanCharacters": 560,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "446–447",
+          "additionalEvidence": [
+            "data/visual-evidence.json",
+            "data/model-comparison.json"
+          ],
+          "purpose": "Distinguish measured visual stage from conceptual or reference supporting material."
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "446–447"
+        },
+        {
+          "paragraph": 3,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "446–447"
+        }
+      ]
+    },
+    {
+      "slide": 30,
+      "section": "2.2.4",
+      "pages": "447–448",
+      "title": "Interpreting combined representations",
+      "newEnglishWords": 112,
+      "newKoreanCharacters": 377,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "447–448"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "447–448"
+        }
+      ]
+    },
+    {
+      "slide": 31,
+      "section": "2.2.4",
+      "pages": "448–450",
+      "title": "From interpretability to distant reading",
+      "newEnglishWords": 116,
+      "newKoreanCharacters": 373,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "448–450"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "448–450"
+        },
+        {
+          "paragraph": 3,
+          "status": "verbatim-korean-new-english-translation",
+          "sourceExcerpt": "attention-and-causality",
+          "sourcePages": "448",
+          "english": "Attention does not, of course, demonstrate a simple causal relation such as “this one word caused the classification as tragedy.” A deep-learning model’s judgment passes through complex computations at multiple levels. Attention scores can nevertheless help us gauge which words and phrases play important roles along the central paths of that judgment.",
+          "koreanSHA256": "6cdbba5ef5d40ab7ad40ee3001b0e02f15b39b38580988e99a1162f6535154d6"
+        }
+      ]
+    },
+    {
+      "slide": 32,
+      "section": "3",
+      "pages": "450",
+      "title": "Define the practical question and its scope",
+      "newEnglishWords": 104,
+      "newKoreanCharacters": 384,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "450"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "450"
+        }
+      ]
+    },
+    {
+      "slide": 33,
+      "section": "3",
+      "pages": "451",
+      "title": "The seven-stage research workflow",
+      "newEnglishWords": 102,
+      "newKoreanCharacters": 381,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "451"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "451"
+        }
+      ]
+    },
+    {
+      "slide": 34,
+      "section": "3.1",
+      "pages": "451–452",
+      "title": "Obtain TEI-XML from Folger",
+      "newEnglishWords": 109,
+      "newKoreanCharacters": 367,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "451–452"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "451–452"
+        }
+      ]
+    },
+    {
+      "slide": 35,
+      "section": "3.1",
+      "pages": "452",
+      "title": "Why read the TEI tags?",
+      "newEnglishWords": 108,
+      "newKoreanCharacters": 392,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "452"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "452"
+        }
+      ]
+    },
+    {
+      "slide": 36,
+      "section": "3.1",
+      "pages": "452",
+      "title": "Editions, bibliography and an EEBO-TCP extension",
+      "newEnglishWords": 110,
+      "newKoreanCharacters": 384,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "452"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "452"
+        }
+      ]
+    },
+    {
+      "slide": 37,
+      "section": "3.2",
+      "pages": "452–453",
+      "title": "Extract speech-only text",
+      "newEnglishWords": 107,
+      "newKoreanCharacters": 368,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "452–453"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "452–453"
+        }
+      ]
+    },
+    {
+      "slide": 38,
+      "section": "3.2",
+      "pages": "453",
+      "title": "Name masking is a separate experiment",
+      "newEnglishWords": 105,
+      "newKoreanCharacters": 379,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "453"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "453"
+        }
+      ]
+    },
+    {
+      "slide": 39,
+      "section": "3.2",
+      "pages": "453–454",
+      "title": "Words and tokens are not the same unit",
+      "newEnglishWords": 109,
+      "newKoreanCharacters": 383,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "453–454"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "453–454"
+        }
+      ]
+    },
+    {
+      "slide": 40,
+      "section": "3.3",
+      "pages": "454–455",
+      "title": "data_a and data_b define the research question",
+      "newEnglishWords": 101,
+      "newKoreanCharacters": 356,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "454–455"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "454–455"
+        }
+      ]
+    },
+    {
+      "slide": 41,
+      "section": "3.3",
+      "pages": "454–455",
+      "title": "Read the 510-token chunking code",
+      "newEnglishWords": 106,
+      "newKoreanCharacters": 362,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "454–455"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "454–455"
+        }
+      ]
+    },
+    {
+      "slide": 42,
+      "section": "3.3",
+      "pages": "455",
+      "title": "Chunk counts and diversity of works",
+      "newEnglishWords": 109,
+      "newKoreanCharacters": 360,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "455"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "455"
+        }
+      ]
+    },
+    {
+      "slide": 43,
+      "section": "3.3",
+      "pages": "455–456",
+      "title": "Balance the classes by undersampling",
+      "newEnglishWords": 108,
+      "newKoreanCharacters": 374,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "455–456"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "455–456"
+        }
+      ]
+    },
+    {
+      "slide": 44,
+      "section": "3.3",
+      "pages": "455–456",
+      "title": "The 80:20 stratified split and work-level splitting",
+      "newEnglishWords": 113,
+      "newKoreanCharacters": 386,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "455–456"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "455–456"
+        }
+      ]
+    },
+    {
+      "slide": 45,
+      "section": "3.4",
+      "pages": "457",
+      "title": "Read the training configuration",
+      "newEnglishWords": 154,
+      "newKoreanCharacters": 585,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "457",
+          "additionalEvidence": [
+            "data/visual-evidence.json",
+            "data/model-comparison.json"
+          ],
+          "purpose": "Distinguish measured visual stage from conceptual or reference supporting material."
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "457"
+        },
+        {
+          "paragraph": 3,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "457"
+        }
+      ]
+    },
+    {
+      "slide": 46,
+      "section": "3.4",
+      "pages": "457",
+      "title": "Understand epochs, batches and warmup",
+      "newEnglishWords": 107,
+      "newKoreanCharacters": 360,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "457"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "457"
+        }
+      ]
+    },
+    {
+      "slide": 47,
+      "section": "3.4",
+      "pages": "458",
+      "title": "Compare loss curves from distinct runs",
+      "newEnglishWords": 159,
+      "newKoreanCharacters": 539,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "458",
+          "additionalEvidence": [
+            "data/visual-evidence.json",
+            "data/model-comparison.json"
+          ],
+          "purpose": "Distinguish measured visual stage from conceptual or reference supporting material."
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "458"
+        },
+        {
+          "paragraph": 3,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "458"
+        }
+      ]
+    },
+    {
+      "slide": 48,
+      "section": "3.4",
+      "pages": "459",
+      "title": "Use the curves to question overfitting",
+      "newEnglishWords": 96,
+      "newKoreanCharacters": 365,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "459"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "459"
+        }
+      ]
+    },
+    {
+      "slide": 49,
+      "section": "3.5",
+      "pages": "459",
+      "title": "Accuracy: how many correct, on which material?",
+      "newEnglishWords": 97,
+      "newKoreanCharacters": 351,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "459"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "459"
+        }
+      ]
+    },
+    {
+      "slide": 50,
+      "section": "3.5",
+      "pages": "459–460",
+      "title": "The four cells of the confusion matrix",
+      "newEnglishWords": 97,
+      "newKoreanCharacters": 367,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "459–460"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "459–460"
+        }
+      ]
+    },
+    {
+      "slide": 51,
+      "section": "3.5",
+      "pages": "460",
+      "title": "Reread errors and delimit the evaluation claim",
+      "newEnglishWords": 103,
+      "newKoreanCharacters": 376,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "460"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "460"
+        }
+      ]
+    },
+    {
+      "slide": 52,
+      "section": "3.6",
+      "pages": "461",
+      "title": "Distinguish three kinds of explanatory quantity",
+      "newEnglishWords": 104,
+      "newKoreanCharacters": 384,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461"
+        }
+      ]
+    },
+    {
+      "slide": 53,
+      "section": "3.6",
+      "pages": "461–462",
+      "title": "Read the judicial exchange before its explanation",
+      "newEnglishWords": 117,
+      "newKoreanCharacters": 415,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461–462"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461–462"
+        }
+      ]
+    },
+    {
+      "slide": 54,
+      "section": "3.6",
+      "pages": "461–462",
+      "title": "The language of kingship, law and judgment",
+      "newEnglishWords": 176,
+      "newKoreanCharacters": 644,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461–462",
+          "additionalEvidence": [
+            "data/visual-evidence.json",
+            "data/model-comparison.json"
+          ],
+          "purpose": "Distinguish measured visual stage from conceptual or reference supporting material."
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461–462"
+        },
+        {
+          "paragraph": 3,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461–462"
+        }
+      ]
+    },
+    {
+      "slide": 55,
+      "section": "3.6",
+      "pages": "462–463",
+      "title": "A prison soliloquy: one person, many selves",
+      "newEnglishWords": 112,
+      "newKoreanCharacters": 408,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "462–463"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "462–463"
+        }
+      ]
+    },
+    {
+      "slide": 56,
+      "section": "3.6",
+      "pages": "463–464",
+      "title": "The discord of time and music",
+      "newEnglishWords": 166,
+      "newKoreanCharacters": 605,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "463–464",
+          "additionalEvidence": [
+            "data/visual-evidence.json",
+            "data/model-comparison.json"
+          ],
+          "purpose": "Distinguish measured visual stage from conceptual or reference supporting material."
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "463–464"
+        },
+        {
+          "paragraph": 3,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "463–464"
+        }
+      ]
+    },
+    {
+      "slide": 57,
+      "section": "3.6",
+      "pages": "461–464",
+      "title": "Two passages, several runs, one comparison",
+      "newEnglishWords": 160,
+      "newKoreanCharacters": 553,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461–464",
+          "additionalEvidence": [
+            "data/visual-evidence.json",
+            "data/model-comparison.json"
+          ],
+          "purpose": "Distinguish measured visual stage from conceptual or reference supporting material."
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461–464"
+        },
+        {
+          "paragraph": 3,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "461–464"
+        }
+      ]
+    },
+    {
+      "slide": 58,
+      "section": "3.7",
+      "pages": "464",
+      "title": "From data_c to predictions.csv",
+      "newEnglishWords": 102,
+      "newKoreanCharacters": 352,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "464"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "464"
+        }
+      ]
+    },
+    {
+      "slide": 59,
+      "section": "3.7",
+      "pages": "465",
+      "title": "Pericles: treason and honour",
+      "newEnglishWords": 107,
+      "newKoreanCharacters": 420,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "465"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "465"
+        }
+      ]
+    },
+    {
+      "slide": 60,
+      "section": "3.7",
+      "pages": "465–466",
+      "title": "0.5987 and political self-justification",
+      "newEnglishWords": 101,
+      "newKoreanCharacters": 375,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "465–466"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "465–466"
+        }
+      ]
+    },
+    {
+      "slide": 61,
+      "section": "3.7",
+      "pages": "464–466",
+      "title": "Read a work through its distribution of chunks",
+      "newEnglishWords": 97,
+      "newKoreanCharacters": 358,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "464–466"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "464–466"
+        }
+      ]
+    },
+    {
+      "slide": 62,
+      "section": "4",
+      "pages": "466–467",
+      "title": "Is genre essence or relation?",
+      "newEnglishWords": 102,
+      "newKoreanCharacters": 366,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "466–467"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "466–467"
+        },
+        {
+          "paragraph": 3,
+          "status": "verbatim-korean-new-english-translation",
+          "sourceExcerpt": "classification-and-criticism",
+          "sourcePages": "467",
+          "english": "Rather than replacing traditional criticism, this approach connects differences of scene, imagery and feeling perceived through humanistic intuition with quantitative evidence. It functions as a complementary digital-humanities tool, enabling new ways of considering what genre names reveal and conceal, and the linguistic and historical relationships through which a work’s generic identity is constituted.",
+          "koreanSHA256": "d522cee0f60bcf6b93722ddb7091fd8c13b072953ec7b934306398b9ac6bf164"
+        }
+      ]
+    },
+    {
+      "slide": 63,
+      "section": "4",
+      "pages": "467",
+      "title": "A research record connecting results, explanations and criticism",
+      "newEnglishWords": 106,
+      "newKoreanCharacters": 362,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "467"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "467"
+        }
+      ]
+    },
+    {
+      "slide": 64,
+      "section": "ex1",
+      "pages": "468",
+      "title": "Basic exercise: compare three explanation files",
+      "newEnglishWords": 106,
+      "newKoreanCharacters": 350,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "468"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "468"
+        }
+      ]
+    },
+    {
+      "slide": 65,
+      "section": "ex2",
+      "pages": "468",
+      "title": "Intermediate 1: train Victorian versus Modernist",
+      "newEnglishWords": 99,
+      "newKoreanCharacters": 374,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "468"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "468"
+        }
+      ]
+    },
+    {
+      "slide": 66,
+      "section": "ex2",
+      "pages": "468–469",
+      "title": "Intermediate 2: Hardy’s score distribution and boundary chunks",
+      "newEnglishWords": 101,
+      "newKoreanCharacters": 357,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "468–469"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "468–469"
+        }
+      ]
+    },
+    {
+      "slide": 67,
+      "section": "ex3",
+      "pages": "469",
+      "title": "Advanced 1: redesign the labels",
+      "newEnglishWords": 105,
+      "newKoreanCharacters": 364,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "469"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "469"
+        }
+      ]
+    },
+    {
+      "slide": 68,
+      "section": "ex3",
+      "pages": "469–470",
+      "title": "Advanced 2: style markers and critical synthesis",
+      "newEnglishWords": 106,
+      "newKoreanCharacters": 415,
+      "reading": [
+        {
+          "paragraph": 1,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "469–470"
+        },
+        {
+          "paragraph": 2,
+          "status": "new-grounded-bilingual-teaching-prose",
+          "sourceExcerpt": null,
+          "sourcePages": "469–470"
+        }
+      ]
+    }
+  ],
+  "updatedAt": "2026-11-25T21:35:33.036Z",
+  "summary": {
+    "passed": true,
+    "checkedAt": "2026-11-25T21:35:33.036Z",
+    "slides": 68,
+    "bilingualTakeaways": 68,
+    "authoredReadingParagraphs": 145,
+    "verbatimAnalyticalPassages": 5,
+    "newEnglishWords": 7879,
+    "newKoreanCharacters": 27830,
+    "exactLiteraryQuotationsPreserved": true,
+    "originalFiguresRetained": 14,
+    "executableCodeBlocksPreserved": 12,
+    "codeCommentsChanged": "Slide40 only: two publication-specific class comments simplified.",
+    "measuredStageAlignmentSlides": [
+      13,
+      15,
+      27,
+      29,
+      45,
+      47,
+      54,
+      56,
+      57
+    ],
+    "sourceFramingSlides": [],
+    "failures": []
+  }
+}

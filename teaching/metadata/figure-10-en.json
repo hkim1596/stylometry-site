@@ -1,0 +1,8 @@
+{
+  "title": "Seven stages of a text classification study",
+  "source": "figure-10.png",
+  "kind": "English-language conceptual diagram",
+  "method": "Newly authored SVG preserving the original seven-stage order and translating the labels. The original PNG is unchanged and used in Korean mode.",
+  "labels": ["Source collection", "Preprocessing", "Labelling", "Model training", "Validation", "Interpretation", "Prediction"],
+  "measured_data": false
+}
