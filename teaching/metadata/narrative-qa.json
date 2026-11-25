@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checkedAt": "2026-11-25T21:35:33.036Z",
+  "slides": 68,
+  "bilingualTakeaways": 68,
+  "authoredReadingParagraphs": 145,
+  "verbatimAnalyticalPassages": 5,
+  "newEnglishWords": 7879,
+  "newKoreanCharacters": 27830,
+  "exactLiteraryQuotationsPreserved": true,
+  "originalFiguresRetained": 14,
+  "executableCodeBlocksPreserved": 12,
+  "codeCommentsChanged": "Slide40 only: two publication-specific class comments simplified.",
+  "measuredStageAlignmentSlides": [
+    13,
+    15,
+    27,
+    29,
+    45,
+    47,
+    54,
+    56,
+    57
+  ],
+  "sourceFramingSlides": [],
+  "failures": []
+}
