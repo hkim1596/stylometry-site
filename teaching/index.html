@@ -20,6 +20,7 @@
   </header>
   <div class="course-heading"><h1 id="course-title"></h1><p id="course-subtitle"></p></div>
   <div class="teaching-toolbar" aria-label="Teaching controls">
+    <button id="directory-toggle" aria-haspopup="dialog">Playground</button>
     <button id="outline-toggle" aria-controls="course-outline" aria-expanded="false">Contents</button>
     <div class="slide-selector"><label for="slide-select" id="select-label"></label><select id="slide-select"></select></div>
     <button id="notes-toggle" aria-haspopup="dialog"></button>
@@ -43,6 +44,7 @@
     <div class="navigation-progress"><span id="slide-count"></span><small id="section-count"></small></div>
     <button id="next" class="primary"></button>
   </nav>
+  <dialog id="directory-dialog" aria-labelledby="directory-title"><div class="dialog-top"><h2 id="directory-title"></h2><button id="close-directory"></button></div><div id="station-directory" class="practice-directory"></div></dialog>
   <dialog id="notes-panel" class="text-dialog" aria-labelledby="notes-title">
     <div class="dialog-top"><h2 id="notes-title"></h2><button id="close-notes"></button></div>
     <label for="notes" id="notes-label"></label><textarea id="notes" rows="10"></textarea>
@@ -60,6 +62,6 @@
     <div class="practice-dialog-tools"><p id="practice-language-note"></p><a id="practice-full-link" target="_blank" rel="noopener"></a></div>
     <p id="practice-loading" role="status"></p><div id="practice-frame-host"></div>
   </dialog>
-  <script src="content.js"></script><script src="practice.js"></script><script src="passages.js"></script><script src="case-data.js"></script><script src="case-study.js"></script><script src="case-visuals.js"></script><script src="readings.js"></script><script src="practice-links.js"></script><script src="visual-evidence.js"></script><script src="visuals.js"></script><script src="course.js"></script>
+  <script src="content.js"></script><script src="practice.js"></script><script src="passages.js"></script><script src="case-data.js"></script><script src="case-study.js"></script><script src="case-visuals.js"></script><script src="readings.js"></script><script src="practice-links.js"></script><script src="visual-evidence.js"></script><script src="visuals.js"></script><script src="workflows.js"></script><script src="course.js"></script>
 </body>
 </html>

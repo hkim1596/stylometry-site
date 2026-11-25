@@ -129,3 +129,114 @@ dialog{width:min(96vw,1400px);max-height:94vh;padding:22px;border:1px solid var(
   html[data-theme="dark"] .reading-excerpt { background: #302d24; color: #e3d6bf; border-color: #d0ae79; }
   html[data-theme="dark"] .stage-credit button { background: none; }
 }
+
+/* Evidence comes first; teaching narration remains available beneath it. */
+.course-heading{margin-block:18px 14px}.course-heading h1{font-size:1.4rem}.course-heading p{font-size:.85rem}
+.course-shell{padding-top:18px}.progress{margin-bottom:12px}
+.teaching-stage{padding:22px 26px}.stage-header{margin-bottom:14px}.stage-heading{margin-bottom:8px;gap:18px}.section-heading{font-size:.73rem}.stage-number{font-size:1.03rem}.stage-number span{font-size:.67rem}
+.slide-title{font:650 clamp(1.3rem,2vw,1.8rem)/1.3 var(--sans);letter-spacing:-.02em;max-width:none;margin:0}
+.stage-evidence{min-width:0}.stage-visual{margin:0}.evidence-panel{min-width:0}.evidence-views{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}.evidence-views button{font-size:.76rem;min-height:31px;padding:5px 12px;border-radius:6px;background:transparent}.evidence-views button[aria-pressed=true]{background:var(--mint);border-color:#829c91;color:var(--ink)}
+.reference-evidence{display:flex;flex-direction:column;gap:12px}.stage-figure-grid{display:grid;grid-template-columns:repeat(var(--figure-count),minmax(0,1fr));gap:16px;height:clamp(330px,calc(100dvh - 325px),610px);min-height:0}.stage-figure{display:flex;flex-direction:column;min-width:0;min-height:0;height:100%;border-radius:8px}.stage-figure .figure-button{flex:1;min-height:0;padding:10px;display:flex;align-items:center;justify-content:center}.stage-figure .figure-button img{height:100%;width:100%;max-height:none;object-fit:contain;min-height:0}.stage-figure figcaption{flex-shrink:0;font-size:.75rem;line-height:1.35;padding:8px 12px;display:flex;align-items:baseline;gap:6px 15px;justify-content:space-between}.stage-figure figcaption strong{font-weight:550}.stage-figure .figure-kind{font-size:.65rem;white-space:nowrap;margin:0;flex-shrink:0}.stage-figure .zoom-hint{font-size:.67rem}.figure-evidence-strip{flex-shrink:0;min-width:0}
+.stage-guidance{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}.student-prompt{display:flex;gap:14px;font-size:.87rem;line-height:1.5;margin:0 0 8px;color:var(--ink);word-break:keep-all}.student-prompt>span{font-size:.67rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--blue);flex:0 0 86px;padding-top:3px}.teaching-guidance{font-size:.8rem;color:var(--muted)}.teaching-guidance>summary{cursor:pointer;width:max-content;max-width:100%;font-size:.75rem;font-weight:550;text-underline-offset:3px}.teaching-guidance[open]>summary{margin-bottom:10px}.teaching-guidance .slide-takeaway{font-size:.87rem;line-height:1.65;max-width:100ch;margin:0 0 9px;color:var(--muted)}.teaching-guidance .stage-question{display:block;padding:0;border:0}.teaching-guidance .stage-question h3{font-size:.65rem;margin:0 0 3px}.teaching-guidance .stage-question p{font-size:.84rem;line-height:1.65;color:var(--muted);max-width:110ch}.stage-credit{font-size:.7rem;margin-top:12px;padding-top:10px}
+/* Projection uses the available screen, not a rigid slide aspect ratio. */
+.presenting .site-header,.presenting .site-appearance{display:none!important}.presenting .teaching-toolbar{padding-block:8px;min-height:54px}.presenting .teaching-toolbar>button{min-height:36px;padding-block:6px}.presenting .teaching-toolbar select{padding-block:6px}.presenting .course-shell{max-width:1440px;padding:12px 24px 0}.presenting .course-main{max-width:none}.presenting .progress{margin-bottom:8px}.presenting .teaching-stage{display:flex;flex-direction:column;min-height:430px;height:calc(100dvh - 148px);padding:16px 22px;border-radius:12px}.presenting .stage-header{flex-shrink:0;margin-bottom:10px}.presenting .stage-heading{margin-bottom:5px}.presenting .slide-title{font:650 clamp(1.25rem,1.9vw,1.65rem)/1.25 var(--sans);letter-spacing:-.015em}.presenting .stage-evidence{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable}.presenting .stage-evidence.has-reference{display:flex;flex-direction:column}.presenting .evidence-views{flex-shrink:0;margin-bottom:8px}.presenting .reference-evidence{flex:1;min-height:0;gap:8px}.presenting .stage-figure-grid{height:auto;flex:1;min-height:160px;gap:12px}.presenting .stage-figure figcaption{font-size:.7rem;padding:6px 9px}.presenting .stage-figure .figure-kind{font-size:.6rem}.presenting .stage-visual{margin:0}.presenting .stage-guidance{flex-shrink:0;margin-top:10px;padding-top:8px}.presenting .student-prompt{font-size:.81rem;line-height:1.45;margin-bottom:5px}.presenting .teaching-guidance>summary{font-size:.67rem}.presenting .teaching-guidance[open]{max-height:150px;overflow:auto;overscroll-behavior:contain}.presenting .teaching-guidance .slide-takeaway,.presenting .teaching-guidance .stage-question p{font-size:.8rem;line-height:1.5}.presenting .stage-credit{flex-shrink:0;margin-top:8px;padding-top:7px;font-size:.66rem}.presenting .slide-navigation{padding-block:10px}.presenting .slide-navigation>button{min-height:38px;padding-block:7px}
+@media(max-width:700px){.course-heading{margin-block:16px 12px}.course-heading h1{font-size:1.15rem}.course-heading p{font-size:.78rem}.teaching-stage{padding:17px}.stage-header{margin-bottom:13px}.slide-title{font-size:1.23rem;line-height:1.35}.section-heading{font-size:.66rem}.stage-number{font-size:.95rem}.stage-figure-grid{grid-template-columns:1fr;height:auto;gap:12px}.stage-figure{height:clamp(280px,86vw,490px)}.stage-figure figcaption{display:block;font-size:.7rem}.stage-figure .figure-kind{display:inline-block;margin-top:5px}.student-prompt{display:block;font-size:.83rem}.student-prompt>span{display:block;font-size:.65rem;margin-bottom:4px;padding:0}.stage-guidance{margin-top:13px}.teaching-guidance .slide-takeaway{font-size:.83rem}.presenting .course-shell{padding:9px 8px 0}.presenting .teaching-stage{height:auto;min-height:calc(100dvh - 132px);padding:14px}.presenting .slide-title{font-size:1.16rem;line-height:1.3}.presenting .stage-evidence{overflow:visible;min-height:0}.presenting .stage-figure-grid{height:auto;flex:none;min-height:0}.presenting .stage-figure{height:clamp(260px,82vw,490px)}.presenting .stage-guidance{margin-top:13px}.presenting .teaching-toolbar{min-height:48px}.presenting .student-prompt{font-size:.8rem}}
+@media screen{html[data-theme=dark] .evidence-views button[aria-pressed=true]{background:#33554f;border-color:#95bdb1;color:#e1ebe9}html[data-theme=dark] .teaching-guidance .slide-takeaway{color:var(--muted)}}
+@media print{.evidence-views,.teaching-guidance{display:none!important}.teaching-stage,.presenting .teaching-stage{height:auto;min-height:0}.stage-evidence{overflow:visible!important}.reference-evidence[hidden]{display:flex!important}.explore-evidence{display:none!important}.stage-figure-grid{height:400px!important}.stage-guidance{break-inside:avoid}}
+
+/* Deep links and navigation land below the one sticky toolbar. */
+html{scroll-padding-top:0}#slide{scroll-margin-top:78px}.presenting #slide{scroll-margin-top:66px}
+@media(min-width:701px){
+  .presenting .teaching-stage{height:calc(100dvh - 140px)}
+  .presenting .stage-header{margin-bottom:8px}
+  .presenting .stage-guidance{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:baseline;gap:6px 16px;margin-top:6px;padding-top:6px}
+  .presenting .student-prompt{margin-bottom:0}
+  .presenting .teaching-guidance[open]{grid-column:1/-1}
+}
+
+
+/* Contextual experiments belong to selected slides, with the evidence first. */
+.stage-workflow,.workflow-observe,.workflow-lab{min-width:0}
+.workflow-tabs{display:flex;gap:5px;border-bottom:1px solid var(--line);padding-bottom:9px;margin-bottom:12px;flex-shrink:0}
+.workflow-tabs button{display:flex;align-items:center;gap:7px;border:1px solid transparent;background:transparent;padding:5px 11px;min-height:32px;font-size:.76rem;color:var(--muted)}
+.workflow-tabs button span{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;font-size:.68rem;border:1px solid var(--line);background:var(--paper)}
+.workflow-tabs button[aria-pressed=true]{background:var(--mint);border-color:#b1c5b8;color:var(--ink)}
+.workflow-tabs button[aria-pressed=true] span{border-color:var(--blue);background:var(--blue);color:#fff}
+.workflow-forward{display:flex;align-items:center;justify-content:space-between;gap:12px 24px;margin-top:12px;padding-top:10px;border-top:1px solid var(--line);flex-shrink:0}
+.workflow-forward p{font-size:.82rem;line-height:1.55;margin:0;max-width:90ch;color:var(--ink)}
+.workflow-action{flex-shrink:0;background:var(--blue);color:#fff;border-color:var(--blue);font-size:.76rem;font-weight:600;min-height:36px;padding:8px 13px;max-width:45%;text-align:left;line-height:1.45}
+.workflow-prediction,.workflow-reflection{margin-top:7px;font-size:.78rem;color:var(--muted)}
+.workflow-prediction summary,.workflow-reflection summary{cursor:pointer;width:max-content;max-width:100%;font-size:.73rem}
+.workflow-prediction label,.workflow-reflection label{display:block;margin-top:10px;font-size:.8rem;line-height:1.5}
+.workflow-prediction textarea,.workflow-reflection textarea{display:block;width:100%;box-sizing:border-box;min-height:76px;margin-top:7px;padding:10px 12px;font:inherit;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;resize:vertical}
+.workflow-prediction-recall{white-space:pre-wrap;line-height:1.6}
+.workflow-task{font-size:.9rem;line-height:1.65;margin:0 0 12px;max-width:110ch;color:var(--ink)}
+.workflow-lab-tools{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin:13px 0;padding:12px 0;border-block:1px solid var(--line);font-size:.75rem}
+.workflow-lab-tools label{max-width:70%;font-weight:600;line-height:1.5}
+.workflow-lab-tools select{display:block;max-width:100%;width:100%;margin:5px 0;padding:8px;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px}
+.workflow-lab-tools small{font-size:.67rem;font-weight:400;color:var(--muted)}
+.workflow-lab-tools>div{display:flex;flex-direction:column;gap:5px;flex-shrink:0;text-align:right;font-size:.69rem;color:var(--muted)}
+.workflow-station-name{font-weight:600;line-height:1.5}
+.workflow-compare-action{border:0;padding:0;margin:12px 0;align-items:center}
+.workflow-compare-action p{font-size:.75rem;color:var(--muted)}
+.workflow-compare-intro .text-button{font-size:.75rem;margin-top:9px;background:transparent;border-color:var(--line);min-height:32px}
+#workflow-frames{min-width:0;position:relative}
+#workflow-frames iframe{display:block;width:100%;min-height:740px;height:1000px;border:1px solid var(--line);border-radius:10px;background:var(--paper);box-sizing:border-box}
+.workflow-loading{padding:22px;font-size:.85rem;color:var(--muted);background:var(--mint);border:1px solid var(--line);border-radius:8px}
+#directory-dialog{width:min(1060px,calc(100vw - 36px));max-width:none}
+#station-directory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding-top:12px}
+#station-directory .practice-card{min-width:0}
+#station-directory .practice-card h3{font-size:.95rem}
+#station-directory .practice-actions{flex-direction:column;align-items:flex-start;gap:8px}
+@media(min-width:701px){
+ .has-workflow .stage-figure-grid{height:clamp(270px,calc(100dvh - 420px),540px)}
+ .presenting .stage-workflow{display:flex;flex-direction:column;flex:1;min-height:0}
+ .presenting .workflow-tabs{padding-bottom:6px;margin-bottom:8px}
+ .presenting .workflow-tabs button{min-height:30px;padding-block:3px;font-size:.73rem}
+ .presenting .workflow-observe{display:flex;flex-direction:column;flex:1;min-height:0}
+ .presenting .workflow-observe>.stage-evidence{flex:1;min-height:0}
+ .presenting .has-workflow .stage-figure-grid{height:auto;min-height:140px}
+ .presenting .workflow-forward{margin-top:7px;padding-top:7px;gap:12px}
+ .presenting .workflow-forward p{font-size:.77rem;line-height:1.45}
+ .presenting .workflow-action{font-size:.72rem;padding:6px 10px;min-height:32px}
+ .presenting .workflow-prediction{margin-top:4px;flex-shrink:0}
+ .presenting .workflow-prediction summary{font-size:.66rem}
+ .presenting .workflow-prediction[open]{max-height:150px;overflow:auto}
+ .presenting .workflow-lab{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding-right:6px}
+ .presenting .has-workflow .stage-guidance{display:block}
+}
+@media(max-width:700px){
+ .workflow-tabs{gap:2px;margin-bottom:11px;padding-bottom:8px}
+ .workflow-tabs button{flex:1;justify-content:center;font-size:.69rem;padding:5px 3px;gap:5px}
+ .workflow-tabs button span{width:17px;height:17px;font-size:.61rem}
+ .workflow-forward{display:block;margin-top:12px}
+ .workflow-forward p{font-size:.8rem}
+ .workflow-action{max-width:100%;margin-top:9px;font-size:.75rem}
+ .workflow-lab-tools{display:block}
+ .workflow-lab-tools label{display:block;max-width:none}
+ .workflow-lab-tools>div{margin-top:10px;flex-direction:row;justify-content:space-between;text-align:left;flex-wrap:wrap}
+ .workflow-task{font-size:.83rem;line-height:1.65}
+ #workflow-frames iframe{border-radius:6px;min-height:800px}
+ #station-directory{grid-template-columns:1fr}
+ .presenting .workflow-lab{overflow:visible}
+}
+@media screen{
+ html[data-theme=dark] .workflow-tabs button[aria-pressed=true]{background:#294843;border-color:#6e938a;color:#e1ebe9}
+ html[data-theme=dark] .workflow-tabs button[aria-pressed=true] span{background:#a6d0c5;border-color:#a6d0c5;color:#152f2c}
+ html[data-theme=dark] .workflow-action{background:#91cad3;border-color:#91cad3;color:#102f35}
+ html[data-theme=dark] .workflow-lab-tools select,html[data-theme=dark] .workflow-prediction textarea,html[data-theme=dark] .workflow-reflection textarea{background:#16272b;border-color:#486269;color:#e2ebe9}
+ html[data-theme=dark] .workflow-loading{background:#253e3b;border-color:#4b6c63}
+}
+@media print{.workflow-tabs,.workflow-forward,.workflow-prediction,.workflow-lab{display:none!important}.workflow-observe[hidden]{display:block!important}.stage-workflow{display:block}}
+
+.workflow-action:hover:not(:disabled){background:#174f56;border-color:#174f56;color:#fff}
+html[data-theme=dark] .workflow-action:hover:not(:disabled){background:#b3dce1;border-color:#b3dce1;color:#102f35}
+
+/* Keep the experimental operation and its next step close to the workbench. */
+.workflow-experiment-intro{display:flex;align-items:center;gap:16px 24px}
+.workflow-experiment-intro .workflow-task{flex:1;margin:0}
+.workflow-experiment-intro .workflow-compare-action{flex:0 0 auto;max-width:35%;margin:0}
+.workflow-compare-action .workflow-action{max-width:none}
+.workflow-lab-tools{margin:9px 0;padding-block:8px}
+.workflow-compare-intro .text-button{margin-right:14px}
+@media(max-width:700px){.workflow-experiment-intro{display:block}.workflow-experiment-intro .workflow-compare-action{max-width:none;margin-top:8px}.workflow-compare-action .workflow-action{margin-top:0}}
