@@ -19,7 +19,7 @@
              text-transform: uppercase; }
   h1 { font-size: 40px; line-height: 1.15; margin: 10px 0 14px; font-weight: 800; }
   .hero p { color: #d7e3f5; max-width: 760px; font-size: 17px; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
             gap: 20px; margin-top: -34px; }
   .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 14px; padding: 26px 28px;
            box-shadow: 0 8px 24px rgba(16,32,58,.08); display: block; color: #101418; }
@@ -64,7 +64,7 @@
   <p>Fine-tune language models on 566 surviving early modern plays, watch them classify
      genre, company, playhouse and print — and make them explain every verdict, word by word.
      Built for scholars: no code, no installation, a browser is enough.</p>
-  <p style='margin-top:10px;font-size:13.5px;color:#b9c9e2'>This page is the project's <b style='color:#fff'>permanent home</b>. The interactive tools below run live on the research group's GPU server; if they are briefly offline, this page — and the project — remain here.</p>
+  <p style='margin-top:10px;font-size:13.5px;color:#b9c9e2'>This page is the project's <b style='color:#fff'>permanent home</b>. The Trainer and AI Playground run on the research group's GPU server. The Chapter 11 lesson and Word Lab also work offline when saved.</p>
 </div></header>
 
 <div class="wrap">
@@ -84,6 +84,13 @@
          word-space arithmetic, nearest-play search, live judging of your own passages —
          with explanations — and a generator to compare.</p>
       <span class="go">Enter the playground →</span>
+    </a>
+    <a class="card" href="teaching/index.html" hreflang="ko">
+      <span class="tag">75-MINUTE LESSON</span>
+      <h2>Teach Chapter 11</h2>
+      <p><span lang="ko">비극인가 역사극인가?</span> Compare two editions of <i>King Lear</i>, interpret a saved
+         classifier run, and explore BERT’s vocabulary in the offline Word Lab. Includes a Korean student worksheet.</p>
+      <span class="go">Open the teaching materials →</span>
     </a>
   </div>
 
@@ -118,8 +125,8 @@
       </div>
       <p style="margin-top:16px;font-size:14px;color:#4b5563">This site accompanies the workshop
         <i>Training and Fine-Tuning Large Language Models for Early Modern Drama Research</i>.
-        Models run live on the research group's GPU server; every result on this site is computed
-        for your input at the moment you ask.</p>
+        The GPU server trains classifiers and answers Playground queries. The classroom Word Lab
+        looks up precomputed BERT word neighbors in your browser.</p>
     </div>
   </section>
 

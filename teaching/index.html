@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>수업 자료 · Interpretable Deep Learning Stylometry</title>
+<meta name="description" content="셰익스피어 희곡으로 배우는 딥러닝 장르 분류. 75분 수업, 판본 비교, BERT 단어 실험, 학생 활동지.">
+<style>
+:root{color-scheme:light;--ink:#18283b;--blue:#1c426d;--navy:#142f55;--muted:#485b70;--rule:#c2cdd6;--cream:#faf7f0;--tint:#eef4f9}
+*{box-sizing:border-box}body{margin:0;background:#fff;color:var(--ink);font:1rem/1.65 "Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;word-break:keep-all;overflow-wrap:break-word}button,input{font:inherit}a{color:#174d85;text-underline-offset:.22em}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #c57723;outline-offset:4px}.skip{position:absolute;left:1rem;top:-5rem;background:white;padding:.5rem;z-index:2}.skip:focus{top:.5rem}
+.wrap{max-width:68rem;margin:auto;padding-inline:clamp(1rem,4.5vw,3.5rem)}header{background:var(--navy);color:white}.top{padding-block:.9rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;border-bottom:1px solid #57708b}header a{color:#fff}.top a{text-decoration:none;font-weight:650}.top a:hover,.card a:hover{text-decoration:underline}.top span{color:#dae6f3;font-size:.9rem}.hero{padding-block:clamp(2rem,5vw,4rem)}h1,h2,h3,p{margin:0}h1,h2,.card h3,.editions-title{font-family:"Nanum Myeongjo",Batang,"AppleMyungjo",Georgia,serif}h1{font-size:clamp(2.1rem,5vw,3.5rem);line-height:1.19;letter-spacing:-.035em}.hero p{max-width:47rem;margin-top:.8rem;color:#dfebf7}.hero .actions{display:flex;flex-wrap:wrap;gap:1rem 1.4rem;align-items:center;margin-top:1.5rem}.primary{display:inline-block;padding:.58rem 1rem;background:white;color:var(--navy);font-weight:700;border-radius:4px;text-decoration:none}.primary:hover{background:#e9f2fc}
+main{padding-block:2.2rem 3rem}h2{font-size:clamp(1.5rem,3.2vw,2rem);line-height:1.36}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;margin-top:.95rem}.card{padding:1.25rem 1.35rem;background:var(--tint);border-top:3px solid #6686a8;display:flex;flex-direction:column;align-items:flex-start}.card:nth-child(2){background:var(--cream);border-color:#aa8861}.card h3{font-size:1.3rem;line-height:1.4}.card p{margin:.45rem 0 .95rem;color:#33475b}.card a{margin-top:auto;font-weight:bold}.block{margin-top:2.1rem;padding-top:1.6rem;border-top:1px solid var(--rule)}.intro{margin:.55rem 0 1.05rem;max-width:52rem;color:#324961}.edition-form{border:0;padding:0;margin:0}.edition-form legend{font-weight:bold;margin:0 0 .4rem}.options{display:flex;flex-wrap:wrap;gap:.4rem .6rem}.options label{display:inline-flex;align-items:center;gap:.35rem;border:1px solid #adbcca;border-radius:.3rem;padding:.35rem .65rem;cursor:pointer;background:white}.options label:has(:checked){color:#16385c;border-color:var(--blue);background:var(--tint);font-weight:bold}input{accent-color:var(--blue)}.table-wrap{overflow-x:auto;margin-top:.8rem}table{width:100%;border-collapse:collapse;min-width:31rem}th,td{border-bottom:1px solid var(--rule);text-align:left;padding:.55rem .6rem}th{font-weight:650}thead th{background:var(--tint);color:#223d59}tbody th{font-weight:500}caption{padding:.25rem 0;text-align:left;color:var(--muted);font-size:.9rem}td[lang=en]{font-family:Georgia,serif;font-size:1.05rem}.note{color:var(--muted);font-size:.9rem;margin-top:.65rem}.guide{margin-top:1rem;padding:.75rem 1rem;border-left:3px solid #a88254;background:var(--cream)}.links{display:flex;gap:.55rem 1.6rem;flex-wrap:wrap;margin-top:.65rem}footer{border-top:1px solid var(--rule);padding:1.15rem 0;background:#f7f9fb;color:var(--muted);font-size:.87rem}button{cursor:pointer}section{scroll-margin-top:1rem}.offscreen{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+@media(max-width:620px){.cards{grid-template-columns:1fr}.top{font-size:.85rem}.top span{display:none}th,td{padding:.45rem}.hero{padding-block:1.8rem}.options{gap:.35rem}.card{padding:1rem}table{min-width:22rem}.wrap{padding-inline:1rem}}
+@media print{header{background:white;color:black}.top,.actions,.options,footer{display:none}.hero,main{padding-block:0}.card,.guide{background:white}.cards{gap:.4rem}.block{margin-top:.8rem}table{min-width:0}.table-wrap{overflow:visible}thead th,td,th{font-size:9pt}}
+</style>
+</head>
+<body><a class="skip" href="#main">본문으로 바로가기</a>
+<header><div class="wrap"><div class="top"><a lang="en" href="https://stylometry.digihumeng.org/">Interpretable Deep Learning Stylometry</a><span lang="en">Teaching materials</span></div>
+<div class="hero"><h1>셰익스피어의 장르를 읽는 법</h1><p>1608년 『리어왕』은 스스로를 역사라고 부른다. 같은 작품이 비극으로 분류되는 과정을 판본, 서지 목록, 언어 모델의 예측에서 따라가 보자.</p>
+<div class="actions"><a class="primary" href="lesson-11.html">11장 수업 시작하기 →</a><a href="lesson-11.html#worksheet">학생 활동지 열기</a></div></div></div></header>
+<main id="main" class="wrap">
+<section aria-labelledby="tools-title"><h2 id="tools-title">수업과 실습</h2>
+<div class="cards"><article class="card"><h3>비극인가 역사극인가?</h3><p>『디지털인문학의 길잡이: 입문』 11장을 위한 75분 수업. 『리어왕』의 두 판본에서 출발해 『리처드 2세』와 『페리클레스』의 대사로 분류 결과를 해석한다.</p><a href="lesson-11.html#plan">시간표와 활동 보기 →</a></article>
+<article class="card"><h3>단어 실험실 <span lang="en">/ Word Lab</span></h3><p><i lang="en">crown</i>과 <i lang="en">nunnery</i>를 입력해 보자. BERT가 두 단어를 어떻게 나누는지 확인하고, 각 단어 주변에 놓인 이웃을 비교한다. 인터넷 연결 없이 사용할 수 있다.</p><a href="word-lab.html">단어 실험실 열기 →</a></article></div></section>
+<section class="block" id="editions" aria-labelledby="editions-title"><h2 id="editions-title">누가 붙인 장르명인가?</h2><p class="intro">네 판본을 서로 다른 기준으로 분류해 보자. 『리어왕』의 두 판본에 같은 장르명이 붙는 기준은 무엇인가? 『페리클레스』의 경우는 어떤가?</p>
+<fieldset class="edition-form" id="source-form" hidden><legend>표에서 보고 싶은 근거</legend><div class="options">
+<label><input type="radio" name="source" value="print" checked>인쇄본의 장르 표기</label><label><input type="radio" name="source" value="annals"><span lang="en">Annals</span></label><label><input type="radio" name="source" value="brit"><span lang="en">British Drama</span></label><label><input type="radio" name="source" value="all">모두 비교</label></div></fieldset>
+<div class="table-wrap" tabindex="0" role="region" aria-label="판본별 장르 비교표"><table><caption>EEBO-TCP 판본과 DEEP 장르 데이터</caption><thead><tr><th scope="col">작품 · 판본</th><th scope="col" data-col="print">인쇄본 표기¹</th><th scope="col" data-col="annals" lang="en">Annals</th><th scope="col" data-col="brit" lang="en">British Drama</th></tr></thead><tbody>
+<tr><th scope="row">『리어왕』 · 1608 사절본</th><td data-col="print" lang="en">Chronicle;History</td><td data-col="annals" lang="en">Tragedy</td><td data-col="brit" lang="en">Tragedy</td></tr>
+<tr><th scope="row">『리어왕』 · 1623 이절판</th><td data-col="print" lang="en">Tragedy</td><td data-col="annals" lang="en">Tragedy</td><td data-col="brit" lang="en">Tragedy</td></tr>
+<tr><th scope="row">『페리클레스』 · 1609 사절본</th><td data-col="print" lang="en">History;Play</td><td data-col="annals" lang="en">Tragicomedy</td><td data-col="brit" lang="en">Romance</td></tr>
+<tr><th scope="row">『두 고귀한 친척』 · 1634 사절본</th><td data-col="print">미기재</td><td data-col="annals" lang="en">Tragicomedy</td><td data-col="brit" lang="en">Tragicomedy</td></tr>
+</tbody></table></div>
+<p class="note">¹ ‘인쇄본 표기’는 DEEP가 각 판본의 <code>title_page_genre</code> 필드에 기록한 값이다. 이절판의 『리어왕』에는 작품 머리표제가 쓰였다. ‘미기재’는 이 필드에 장르명이 없다는 뜻이다.</p>
+<p id="edition-prompt" class="guide" aria-live="polite">같은 작품의 두 판본에서 어떤 차이가 보이는가?</p>
+</section>
+<section class="block" aria-labelledby="server-title"><h2 id="server-title">연구 서버와 교재 자료</h2><p class="intro">분류기의 <span lang="en">Past results</span>에서 <strong>20260909 141019</strong> 행을 열면 고유명사를 가린 비극·역사극 실험을 볼 수 있다. 교재의 코드와 입력 자료는 11장 저장소에서 확인할 수 있다.</p>
+<div class="links"><a href="https://interpretable-deep-learning-stylometry.ngrok.app/train/" lang="en">Classifier Trainer ↗</a><a href="https://interpretable-deep-learning-stylometry.ngrok.app/play/" lang="en">AI Playground ↗</a><a href="https://github.com/digitalhumanitiestextbook/dhtextbook/tree/main/chapter11">교재 11장 코드와 데이터 ↗</a></div></section>
+</main><footer><div class="wrap">경북대학교 디지털인문공학센터 · Interpretable Deep Learning Stylometry</div></footer>
+<script>
+const form = document.getElementById('source-form');
+const prompts = {
+  print: '1608년 『리어왕』을 산 독자는 이 표기에서 무엇을 기대했을까?',
+  annals: '두 『리어왕』의 분류는 같은데, 인쇄본에서는 어떤 차이가 사라졌는가?',
+  brit: '이 분류 기준을 택하면 『페리클레스』는 비극·역사극 두 집단 중 어디에 속할까?',
+  all: '『페리클레스』의 세 표기 중 어느 것이 모델의 학습 레이블로 쓰였는지 알려면 무엇을 확인해야 할까?'
+};
+function selectSource() {
+  const selected = form.querySelector('input:checked').value;
+  for (const cell of document.querySelectorAll('[data-col]')) {
+    cell.hidden = selected !== 'all' && cell.dataset.col !== selected;
+  }
+  document.getElementById('edition-prompt').textContent = prompts[selected];
+}
+form.hidden = false;
+form.addEventListener('change', selectSource);
+selectSource();
+</script></body></html>
