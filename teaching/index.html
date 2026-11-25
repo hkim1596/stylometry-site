@@ -1,26 +1,13 @@
 <!doctype html>
-<html lang="ko">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="김희진·강수진의 Chapter 11을 원본 그림과 함께 읽는 18단계 수업: 장르, 임베딩, 어텐션, 분류와 해석.">
-  <title>비극인가 역사극인가? · Chapter 11 Studio</title>
-  <link rel="stylesheet" href="./styles.css">
-</head>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A complete bilingual course following all sections of Chapter 11: Is it tragedy or history? Original book figures, literary passages, model training and interpretation."><title>Chapter 11 · Complete reading course</title><link rel="stylesheet" href="styles.css"></head>
 <body>
-  <header class="site-header"><a href="https://stylometry.digihumeng.org/" target="_top" class="brand">Stylometry <span>Playground</span></a><nav aria-label="사이트"><a href="https://interpretable-deep-learning-stylometry.ngrok.app/play/finish-the-line/" target="_top">Playground</a><a href="https://interpretable-deep-learning-stylometry.ngrok.app/train/" target="_top">Trainer</a></nav></header>
-  <main class="studio">
-    <div class="lesson-bar"><span class="eyebrow">BOOK → EXPERIMENT → INTERPRETATION</span><span class="lesson-label">Chapter 11 · 교재와 함께</span></div>
-    <div class="deck-tools"><label for="slide-select">수업 목차</label><select id="slide-select"></select><button id="notes-toggle" class="quiet" aria-expanded="false" aria-controls="notes-panel">수업 메모</button></div>
-    <div class="progress-track"><div id="progress-bar"></div></div>
-    <p id="slide-status" class="sr-only" aria-live="polite"></p>
-    <article id="slide" tabindex="-1"></article>
-    <aside id="notes-panel" class="notes-panel" hidden><label for="notes">나의 관찰 · 모델이 보여 준 것과 내가 해석한 것을 구분해 기록하세요.</label><textarea id="notes" rows="5" placeholder="질문 / 관찰 / 다른 가능한 설명 / 다음 실험"></textarea><div><span>이 탭 안에서만 유지됩니다.</span><button id="download-notes">메모 내려받기</button></div></aside>
-    <nav class="slide-nav" aria-label="슬라이드 이동"><button id="previous">← 이전</button><span id="counter"></span><button id="next" class="primary">다음 →</button></nav>
-    <footer class="deck-footer"><span>키보드 ← → 로 이동 · 그림을 눌러 확대</span><button id="sources-toggle" class="text-button" aria-expanded="false" aria-controls="source-panel">출처와 그림 안내</button></footer>
-    <section id="source-panel" class="sources" hidden><h2>원본 교재와 이 수업</h2><p>김희진·강수진, 「비극인가 역사극인가? 딥러닝 텍스트 분류를 통한 르네상스 희곡 분석」, 『디지털인문학의 길잡이: 입문』, 11장. 쪽수는 인쇄 쪽수를 따릅니다.</p><p>그림 1–14는 저작권자의 제공 및 사용 허락에 따라 출판된 전자책에서 가져왔습니다. 그림 1–9는 사료 또는 개념 설명용 도식이며, 그림 11–14는 교재에 실린 실험 결과입니다. 페이지 안의 조작형 예시는 별도로 표시합니다. 이 페이지를 여는 것만으로 모델을 실행하지 않습니다.</p><p>이 슬라이드의 질문·활동·배치는 새로 구성했습니다. 교재의 장르 분류 실험과 현재 Playground의 모델·자료가 동일하다는 뜻은 아닙니다. <a href="./metadata/source-notes.md">상세 출처 기록</a></p></section>
-  </main>
-  <dialog id="figure-dialog" aria-labelledby="figure-dialog-title"><div class="zoom-top"><h2 id="figure-dialog-title"></h2><button id="close-figure" autofocus aria-label="그림 확대 닫기">닫기 ×</button></div><div class="zoom-body"><img id="zoom-image" alt=""></div><p id="zoom-caption"></p></dialog>
-  <script src="./lesson.js"></script>
-</body>
-</html>
+<header class="site-header"><a class="brand" href="https://stylometry.digihumeng.org/" target="_top">Stylometry <span>Book studio</span></a><div class="languages" role="group" aria-label="Language"><button data-lang="en" lang="en">English</button><button data-lang="ko" lang="ko">한국어</button></div></header>
+<div class="course-shell"><aside class="course-outline"><div class="outline-top"><span class="eyebrow" id="outline-label"></span><button id="outline-toggle" aria-controls="section-list" aria-expanded="false">☰</button></div><nav id="section-list" aria-label="Chapter contents"></nav><p class="outline-note" id="outline-note"></p></aside>
+<main class="course-main"><div class="course-top"><span class="eyebrow">CHAPTER 11</span><span id="book-pages"></span></div><h1 id="course-title"></h1><p id="course-subtitle"></p><div class="slide-selector"><label for="slide-select" id="select-label"></label><select id="slide-select"></select><button id="notes-toggle" aria-expanded="false" aria-controls="notes-panel"></button></div><div class="progress"><div id="progress-bar"></div></div><p id="announcer" class="sr-only" aria-live="polite"></p><article id="slide" tabindex="-1"></article>
+<aside id="notes-panel" hidden><label for="notes" id="notes-label"></label><textarea id="notes" rows="5"></textarea><div class="notes-actions"><span id="notes-help"></span><button id="download-notes"></button></div></aside>
+<nav class="slide-navigation" aria-label="Slide navigation"><button id="previous"></button><div><span id="slide-count"></span><small id="section-count"></small></div><button id="next" class="primary"></button></nav><footer class="course-footer"><span id="keyboard-help"></span><button id="sources-toggle" class="text-button" aria-controls="sources" aria-expanded="false"></button></footer><section id="sources" hidden></section>
+</main></div>
+<dialog id="figure-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><h2 id="dialog-title"></h2><button id="close-figure" autofocus></button></div><div class="figure-scroll"><img id="dialog-image" alt=""></div><p id="dialog-caption"></p></dialog>
+<script src="content.js"></script><script src="practice.js"></script><script src="passages.js"></script><script src="course.js"></script>
+</body></html>
