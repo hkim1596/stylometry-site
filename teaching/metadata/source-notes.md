@@ -35,7 +35,7 @@ The manuscript image folder differs from the published edition, notably for figu
 
 ## Interface
 
-Both languages include slide prose, section navigation, labels, activity prompts, source notes in the interface, widget explanations and figure captions. The published Korean headings remain visible as source headings in the English course. The language is retained in `?lang=ko|en` and `localStorage['chapter11-language']`; the direct slide is in `#slide-N`. Notes are held only in the current tab and can be downloaded. Native modal figure zoom, keyboard arrows, expand/collapse source readers, section navigation and mobile layouts are included.
+Both languages include slide prose, section navigation, labels, activity prompts, source notes in the interface, widget explanations and figure captions. The original section hierarchy remains visible in source-heading breadcrumbs, translated into the selected interface language. The language is retained in `?lang=ko|en` and `localStorage['chapter11-language']`; the direct slide is in `#slide-N`. Notes are held only in the current tab and can be downloaded. Native modal figure zoom, keyboard arrows, expand/collapse source readers, section navigation and mobile layouts are included.
 
 The static course runs without a GPU. Connected labs open separately; their model provenance, evaluation records and newly executed outputs must remain distinct from printed book results. Embedded mode reports same-origin `playground-lesson-height` messages for station `genre-case-study`.
 
