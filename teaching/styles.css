@@ -240,3 +240,12 @@ html[data-theme=dark] .workflow-action:hover:not(:disabled){background:#b3dce1;b
 .workflow-lab-tools{margin:9px 0;padding-block:8px}
 .workflow-compare-intro .text-button{margin-right:14px}
 @media(max-width:700px){.workflow-experiment-intro{display:block}.workflow-experiment-intro .workflow-compare-action{max-width:none;margin-top:8px}.workflow-compare-action .workflow-action{margin-top:0}}
+
+/* Optional derivations follow the full literary reading, outside presentation. */
+.optional-math{margin-top:2rem;padding:1rem 1.25rem;border-top:1px solid var(--line);background:var(--paper);border-radius:0 0 .65rem .65rem}
+.optional-math>summary{cursor:pointer;font-size:1rem;font-weight:650;color:var(--ink);line-height:1.5}
+.optional-math-intro{color:var(--muted);font-size:.9rem;margin:.8rem 0 1.1rem}
+.optional-math-body{min-width:0;font-size:.95rem;line-height:1.75}
+.optional-math-body>p{max-width:90ch}
+.optional-math pre{overflow:auto;max-width:100%}
+@media(max-width:700px){.optional-math{padding:1rem .8rem}.optional-math-body{font-size:.9rem}}

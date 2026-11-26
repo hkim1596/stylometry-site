@@ -13,10 +13,10 @@ add(9,
  B('Do the largest counts support your reading? Name one relation in the source that the counts cannot express.','가장 큰 빈도는 자신의 독해를 뒷받침하는가? 빈도가 표현하지 못하는 원문의 관계를 하나 지목하자.'),
  B('Count the two passages','두 구절의 단어 세기'),B('Compare counts with the passages','빈도와 원문 비교하기'),[station('bag-of-words','public-private')]);
 add(10,
- B('The illustrative formula holds TF at three while changing the number of documents containing a word.','설명용 공식은 TF를3으로 고정하고 그 단어가 나오는 문서 수를 바꾼다.'),
+ B('The word occurs three times in one passage. Its prominence changes as it appears in more documents.','한 구절에서 단어는 세 번 나온다. 그 단어가 나타나는 문서가 많아질수록 두드러지는 정도가 달라진다.'),
  B('Will a word keep the same importance when the comparison collection changes?','비교 자료 모음이 바뀌어도 단어의 중요도는 같을까?'),
- B('Open the rarity example. Keep the focal passage fixed and compare the supplied document collection; inspect the station’s stated TF-IDF formula.','희소성 예제를 열자. 중심 구절을 고정한 채 제시된 비교 문서들을 살펴보고, 실습에 명시된 TF-IDF 공식을 확인하자.'),
- B('Explain one weight using both its within-passage frequency and its document frequency. Account for the live formula’s smoothing and normalization.','구절 안의 빈도와 문서 빈도로 가중치 하나를 설명하자. 실시간 공식의 평활화와 정규화도 구분하자.'),
+ B('Open the rarity example. Keep the focal passage fixed and compare how strongly its words stand out in the supplied collection.','희소성 예제를 열자. 중심 구절을 고정한 채 그 단어들이 비교 자료 모음에서 얼마나 두드러지는지 살펴보자.'),
+ B('Choose one prominent word. Is it prominent because it repeats in this passage, because it is uncommon elsewhere, or both?','두드러지는 단어를 하나 고르자. 이 구절에서 반복되기 때문인가, 다른 곳에서는 드물기 때문인가, 아니면 둘 다인가?'),
  B('Test rarity in a corpus','코퍼스에서 희소성 검토하기'),B('Compare the weighting rules','가중치 규칙 비교하기'),[station('bag-of-words','rare-words')]);
 add(13,
  B('Each word has hundreds of coordinates; the strips show only sixteen of them.','각 단어는 수백 개 좌표를 가지며 띠에는 그중16개만 보인다.'),
