@@ -249,3 +249,27 @@ html[data-theme=dark] .workflow-action:hover:not(:disabled){background:#b3dce1;b
 .optional-math-body>p{max-width:90ch}
 .optional-math pre{overflow:auto;max-width:100%}
 @media(max-width:700px){.optional-math{padding:1rem .8rem}.optional-math-body{font-size:.9rem}}
+
+
+/* A scannable invitation appears only beside the opening and closing evidence. */
+.stage-with-qr{display:grid;grid-template-columns:minmax(0,1fr) 232px;gap:24px;align-items:center;min-width:0;min-height:0}
+.stage-with-qr>.stage-evidence{min-width:0;min-height:0}
+.slide-qr{min-width:0;padding-left:23px;border-left:1px solid var(--line);text-align:center;color:var(--ink)}
+.slide-qr h3{font-size:.87rem;font-weight:700;line-height:1.4;margin:0 0 12px}
+.slide-qr-link{display:flex;flex-direction:column;align-items:center;gap:10px;font-size:.74rem;line-height:1.4;color:var(--blue);text-decoration-thickness:1px;text-underline-offset:4px}
+.slide-qr-image{display:block;width:200px;height:200px;max-width:100%;object-fit:contain;background:#fff;filter:none;image-rendering:auto;flex-shrink:0}
+.slide-qr-link>span{max-width:100%;overflow-wrap:anywhere}
+.slide-qr>p{font-size:.75rem;line-height:1.55;color:var(--muted);margin:11px 0 0}
+.presenting .stage-with-qr{flex:1;min-height:0;align-items:stretch}
+.presenting .stage-with-qr>.stage-evidence{height:100%;min-height:0}
+.presenting .slide-qr{align-self:center}
+@media(max-width:900px){.stage-with-qr{grid-template-columns:minmax(0,1fr) 212px;gap:18px}.slide-qr{padding-left:11px}.slide-qr-image{width:200px;height:200px}}
+@media(max-width:700px){
+ .stage-with-qr,.presenting .stage-with-qr{display:flex;flex-direction:column;align-items:stretch;gap:22px}
+ .slide-qr{padding:20px 0 0;border-left:0;border-top:1px solid var(--line);width:100%;align-self:stretch}
+ .slide-qr h3{margin-bottom:12px}
+ .slide-qr>p{max-width:30ch;margin:11px auto 0}
+ .presenting .stage-with-qr>.stage-evidence{height:auto;overflow:visible}
+ .presenting .slide-qr{align-self:stretch}
+}
+@media print{.stage-with-qr{display:grid;grid-template-columns:minmax(0,1fr) 212px;gap:20px}.slide-qr{break-inside:avoid}.slide-qr-image{width:190px;height:190px}}

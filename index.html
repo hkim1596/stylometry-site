@@ -18,6 +18,21 @@
   header.hero { background: linear-gradient(160deg, #12203a 0%, #1c3a63 70%, #1c5cab 100%);
                  color: #fff; padding: 56px 24px 48px; }
   .hero-inner { max-width: 1060px; margin: 0 auto; }
+  .hero-top { display: flex; align-items: center; justify-content: space-between;
+              flex-wrap: wrap; gap: 18px; margin-bottom: 18px; }
+  .center-link { display: inline-flex; align-items: center; gap: 18px; max-width: 100%;
+                 padding: 12px 16px; border: 1px solid #8faed3; border-radius: 10px;
+                 background: rgba(255,255,255,.08); color: #fff; line-height: 1.4; }
+  .center-link strong { display: block; font-size: 14px; }
+  .center-link small { display: block; margin-top: 2px; font-size: 12px; color: #d7e3f5; }
+  .center-link .external-arrow { flex: 0 0 auto; font-size: 22px; }
+  .center-link:hover { background: rgba(255,255,255,.16); text-decoration: none; }
+  .center-link:hover strong { text-decoration: underline; text-underline-offset: 3px; }
+  .center-link:focus-visible { outline: 3px solid #cde2fb; outline-offset: 4px; }
+  @media (max-width: 600px) {
+    .hero-top { align-items: flex-start; gap: 16px; }
+    .center-link { width: 100%; justify-content: space-between; }
+  }
   .kicker { letter-spacing: .18em; font-size: 12px; font-weight: 700; color: #cde2fb;
              text-transform: uppercase; }
   h1 { font-size: 40px; line-height: 1.15; margin: 10px 0 14px; font-weight: 800; }
@@ -62,7 +77,14 @@
 </style></head>
 <body>
 <header class="hero"><div class="hero-inner">
-  <div class="kicker">Digital Humanities · Early Modern Drama</div>
+  <div class="hero-top">
+    <div class="kicker">Digital Humanities · Early Modern Drama</div>
+    <a class="center-link" href="https://digihumeng.org/">
+      <span><strong>Digital Humanities Engineering Center</strong>
+        <small>Visit the Center’s main website</small></span>
+      <span class="external-arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
   <h1>Interpretable Deep Learning Stylometry</h1>
   <p>Fine-tune language models on 566 surviving early modern plays, watch them classify
      genre, company, playhouse and print — and make them explain every verdict, word by word.
@@ -120,7 +142,7 @@
             Kyungpook National University<br>
             Director, Digital Humanities Engineering Center</div>
           <div class="links">
-            <a href="https://www.digihumeng.org" target="_blank">digihumeng.org</a>
+            <a href="https://digihumeng.org/" target="_blank" rel="noopener">digihumeng.org</a>
             <a href="https://knu.academia.edu/HeejinKim" target="_blank">Academia.edu</a>
             <a href="https://github.com/hkim1596" target="_blank">GitHub</a>
           </div>
